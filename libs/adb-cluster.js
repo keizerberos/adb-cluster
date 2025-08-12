@@ -18,6 +18,7 @@ class AdbCluster{
 
         io.on("connect", () => {    
             Log.i("Connected to " + process.env['ADB_SERVER']);
+			console.log("connect devices ",devices);
 			io.emit("devices",devices);
         });
 		io.on('screen', (json)=> {
@@ -33,6 +34,18 @@ class AdbCluster{
 		io.on('adb', (json)=> {
             Log.i("adb");	
 			adbManager.sendAdb(json);
+		});
+		io.on('stopApk', (json)=> {
+            Log.i("killApk");	
+			adbManager.killApk(json);
+		});
+		io.on('Unlock', (json)=> {
+            Log.i("Unlock");	
+			adbManager.unlockDevice(json);
+		});
+		io.on('Lock', (json)=> {
+            Log.i("Unlock");	
+			adbManager.lockDevice(json);
 		});
 		io.on('message', (json)=> {
 			/*try {
@@ -62,13 +75,30 @@ class AdbCluster{
 			} catch (e) {
 			}*/
 		});
-		adbManager.on("devices",(devices)=>{
+		/*adbManager.on("devices",(devicesAdb)=>{
+			devicesAdb.forEach(device => {
+				let findDevice = devices.find(d=>d.serial == devicesAdb.serial)
+				if(findDevice == null) devices.push(device);
+			});
 			Log.i("devices:");
 			Log.o(devices);
 			io.emit("devices",devices);
+		});*/
+		adbManager.on("device.connect",(deviceAdb)=>{
+			io.emit("device.connect",deviceAdb);
+			if (devices[deviceAdb.serial]==null)
+				devices.push(deviceAdb);
+		});
+		adbManager.on("device.disconnect",(deviceAdb)=>{
+			io.emit("device.disconnect",deviceAdb);
+			const deviceFinded = devices.find(d => d.serial == deviceAdb.serial);
+			if (deviceFinded != null)
+				devices.splice(devices.indexOf(deviceFinded),1);
 		});
 		adbManager.on("capture",(id,data)=>{
-			Log.i("capture:"+id);
+			Log.i("capture:"+id);			
+			//console.log(id,data);
+			io.emit("device.capture",{serial:id,data:data});
 		});
 		adbManager.start();
     }
