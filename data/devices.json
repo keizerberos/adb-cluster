@@ -1,0 +1,22 @@
+
+{	
+	"devicesAssign" : {
+		"NBA34BOAC5047046": { "number": "01" },
+		"NBA34BOAC5047063": { "number": "02" },
+		"NBA34BOAC5038914": { "number": "03" },
+		"NBA34BOAC5042623": { "number": "04" },
+		"NBA34BOAC5042652": { "number": "05" },
+		"NBA34BOAC5042615": { "number": "06" },
+		"NBA34BOAC5042174": { "number": "07" },
+		"NBA34BOPC5001919": { "number": "08" },
+		"NBA34BOPC5000854": { "number": "09" },
+		"NBA34BOAC5042212": { "number": "10" },
+		"NBA34BOPC5000889": { "number": "11" },
+		"NBA34BOAC5042176": { "number": "12" },
+		"NBA34BOAC5042619": { "number": "14" },
+		"NBA34BOAC5042654": { "number": "13" }
+	},
+	"APN":{
+		
+	}
+}
