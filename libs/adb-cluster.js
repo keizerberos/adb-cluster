@@ -26,6 +26,11 @@ class AdbCluster{
 			Log.o(json);
 			adbManager.updateScreens(json.devices);
 		});
+		io.on('Screen', (json)=> {
+            Log.i("Screen");			
+			Log.o(json);
+			adbManager.updateScreens(json.devices);
+		});
 		io.on('unlock', (json)=> {
             Log.i("unlock");			
 			Log.o(json);
@@ -34,18 +39,22 @@ class AdbCluster{
 		io.on('adb', (json)=> {
             Log.i("adb");	
 			adbManager.sendAdb(json);
+			adbManager.updateScreens(json.devices);
 		});
 		io.on('stopApk', (json)=> {
             Log.i("killApk");	
 			adbManager.killApk(json);
+			adbManager.updateScreens(json.devices);
 		});
 		io.on('Unlock', (json)=> {
             Log.i("Unlock");	
 			adbManager.unlockDevice(json);
+			adbManager.updateScreens(json.devices);
 		});
 		io.on('Lock', (json)=> {
             Log.i("Unlock");	
 			adbManager.lockDevice(json);
+			adbManager.updateScreens(json.devices);
 		});
 		io.on('message', (json)=> {
 			/*try {
@@ -97,7 +106,7 @@ class AdbCluster{
 		});
 		adbManager.on("capture",(id,data)=>{
 			Log.i("capture:"+id);			
-			//console.log(id,data);
+			//console.log(id, data);
 			io.emit("device.capture",{serial:id,data:data});
 		});
 		adbManager.start();

@@ -19,6 +19,10 @@ class AdbManager {
 		const outputScreen = await launchCommandx('-s ' + data.devices + ' shell ' + data.data.command);
 		}
 		
+	async killApk(data) {
+		//console.log("killApk adb command",'-s '+data.devices+' shell am force-stop ' + data.data.apk );
+		const outputScreen = await launchCommandx('-s ' + data.devices + ' shell am force-stop ' + data.data.apk)
+	}
 	unlockDevice(id) {
 		return new Promise(async (resolve) => {
 			//console.log('-s '+id+' exec-out screencap -p');
