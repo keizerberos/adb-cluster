@@ -112,4 +112,27 @@ const _autoKill = id => {
         _adbProcess[id].kill();
     }, _timeout);
 }
-module.exports = {_adbb,launchCommandx,adbCommand,adbCommandBuffer,launchCommandBuffer,_autoKill}
+const _startGni = (command, baypass) => {
+     
+    return new Promise(async (resolve) => {
+        const id = generateUniqueId(command.toString());
+        //let process = null; 
+        return new Promise(async (resolve) => {
+            let outputChunks = [];
+            let outputLength = 0;
+            _adbProcess[id] = spawn(__dirname+'\\..\\bin\\gnirehtet.exe', command, { shell: false, });
+            _adbProcess[id].stdout.on("data", function (chunk) {
+               // console.log(outputChunks.toString());
+                outputChunks.push(chunk);
+                outputLength += chunk.length;
+            });
+            _adbProcess[id].stdout.on('end', () => {
+                const output = Buffer.concat(outputChunks, outputLength);
+                let result = true;
+                resolve({ result, message: output });
+            });
+            //_autoKill(id);
+        });
+    });
+};
+module.exports = {_adbb,_startGni,generateUniqueId,launchCommandx,adbCommand,adbCommandBuffer,launchCommandBuffer,_autoKill}

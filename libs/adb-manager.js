@@ -1,4 +1,5 @@
-const {_adbb,launchCommandx,adbCommand,adbCommandBuffer,launchCommandBuffer,_autoKill} = require('./adb');
+const {_adbb,_startGni,generateUniqueId,launchCommandx,adbCommand,adbCommandBuffer,launchCommandBuffer,_autoKill} = require('./adb');
+
 let Log = null;
 let lastDevices = -1;
 
@@ -23,10 +24,16 @@ class AdbManager {
 		//console.log("killApk adb command",'-s '+data.devices+' shell am force-stop ' + data.data.apk );
 		const outputScreen = await launchCommandx('-s ' + data.devices + ' shell am force-stop ' + data.data.apk)
 	}
-	unlockDevice(id) {
+	async installApk(id,path) {
 		return new Promise(async (resolve) => {
-			//console.log('-s '+id+' exec-out screencap -p');
-			const outputScreen = await launchCommandx(`-s ${id} shell input keyevent 82`);
+			console.log("installApk",path);
+			let outputScreen = await launchCommandx(`-s ${id} install ${path}`);
+			resolve();
+		});
+	}
+	async unlockDevice(id) {
+		return new Promise(async (resolve) => {
+			let outputScreen = await launchCommandx(`-s ${id} shell input keyevent 82`);
 			setTimeout(async () => {
 				outputScreen = await launchCommandx(`-s ${id} shell input swipe 300 1600 300 50 100`);
 				outputScreen = await launchCommandx(`-s ${id} shell input swipe 300 806 300 806 20`);
@@ -88,19 +95,25 @@ class AdbManager {
 			await self.watchDevices()
 		}, 14000);
 	}
-	start(){		
-		this.watchDevices();
+	async start(){		
+		await this.watchDevices();
 	}
 	async recImage(id) {
 		const self = this;
 		return new Promise(async (resolve) => {
-			console.log("recimage ",id);
+			//console.log("recimage ",id);
 			const outputScreen = await launchCommandBuffer('-s ' + id + ' exec-out screencap -p')
 			self.events["capture"].forEach(async fn => {
 				fn(id, outputScreen.message);
 			});
 			resolve();
 		});
+	}
+	async startTethering(id) { 
+		_startGni(['run',id]);
+	}
+	async stopTethering(id) { 
+		//_startGni(id);
 	}
 
 	async updateScreens(id) { 

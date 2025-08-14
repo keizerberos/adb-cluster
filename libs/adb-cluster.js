@@ -14,6 +14,8 @@ class AdbCluster{
       	const io = new SocketIo(process.env['ADB_SERVER'], {
 				reconnection: true,
 				reconnectionDelay: 10000,
+				pingInterval: 1000, 
+				pingTimeout: 1500,
 			});
 
         io.on("connect", () => {    
@@ -22,13 +24,18 @@ class AdbCluster{
 			io.emit("devices",devices);
         });
 		io.on('screen', (json)=> {
-            Log.i("screen");			
-			Log.o(json);
+            //Log.i("screen");			
+			//Log.o(json);
 			adbManager.updateScreens(json.devices);
 		});
 		io.on('Screen', (json)=> {
-            Log.i("Screen");			
-			Log.o(json);
+            //Log.i("Screen");			
+			//Log.o(json);
+			adbManager.updateScreens(json.devices);
+		});
+		io.on('screenx', (json)=> {
+            //Log.i("Screen");			
+			//Log.o(json);
 			adbManager.updateScreens(json.devices);
 		});
 		io.on('unlock', (json)=> {
@@ -37,24 +44,44 @@ class AdbCluster{
 			adbManager.updateScreens(json.devices);
 		});
 		io.on('adb', (json)=> {
-            Log.i("adb");	
+            //Log.i("adb");
+			//console.log("json",json);	
 			adbManager.sendAdb(json);
-			adbManager.updateScreens(json.devices);
-		});
-		io.on('stopApk', (json)=> {
-            Log.i("killApk");	
-			adbManager.killApk(json);
 			adbManager.updateScreens(json.devices);
 		});
 		io.on('Unlock', (json)=> {
             Log.i("Unlock");	
-			adbManager.unlockDevice(json);
+			adbManager.unlockDevice(json.devices);
 			adbManager.updateScreens(json.devices);
+		});
+		io.on('install.keyboard', (json)=> {
+            Log.i("install.keyboard");	
+			adbManager.installApk(json.devices,__dirname+'./../apks/ADBKeyboard.apk');
+		});
+		io.on('install.gni', (json)=> {
+            Log.i("install.gni");	
+			adbManager.installApk(json.devices,__dirname+'./../apks/gnirehtet.apk');
+		});
+		io.on('tethering.start', (json)=> {
+            Log.i("start tethering for " + json.devices);
+			adbManager.startTethering(json.devices);
+		});
+		io.on('tethering.stop', (json)=> {
+            Log.i("steo tethering for " + json.devices);	
+			adbManager.stopTethering(json.devices);
+		});
+		io.on('install.wifi', (json)=> {
+            Log.i("install.wif");	
+			adbManager.installApk(json.devices,__dirname+'./../apks/adb-join-wifi.apk');
 		});
 		io.on('Lock', (json)=> {
             Log.i("Unlock");	
-			adbManager.lockDevice(json);
+			adbManager.lockDevice(json.devices);
 			adbManager.updateScreens(json.devices);
+		});
+		io.on('stopApk', (json)=> {
+            Log.i("stopApk");	
+			adbManager.killApk(json);
 		});
 		io.on('message', (json)=> {
 			/*try {
@@ -105,7 +132,7 @@ class AdbCluster{
 				devices.splice(devices.indexOf(deviceFinded),1);
 		});
 		adbManager.on("capture",(id,data)=>{
-			Log.i("capture:"+id);			
+			//Log.i("capture:"+id);			
 			//console.log(id, data);
 			io.emit("device.capture",{serial:id,data:data});
 		});
