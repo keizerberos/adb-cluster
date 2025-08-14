@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "atx-logger": "^1.0.2",
+    "atx-logger": "^1.0.3",
     "compression": "^1.8.1",
     "cors": "^2.8.5",
     "express": "^5.1.0",
