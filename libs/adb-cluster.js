@@ -12,10 +12,10 @@ class AdbCluster{
 		Log.i("Trying connect to " + process.env['ADB_SERVER']);
 		const devices = [];
       	const io = new SocketIo(process.env['ADB_SERVER'], {
-				reconnection: true,
-				reconnectionDelay: 10000,
-				pingInterval: 1000, 
-				pingTimeout: 1500,
+				pingInterval: 3800, 
+				pingTimeout: 3500,
+				maxHttpBufferSize: 1e8 ,
+				forceNew: true,
 			});
 
         io.on("connect", () => {    
