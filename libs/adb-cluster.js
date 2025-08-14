@@ -20,7 +20,7 @@ class AdbCluster{
 
         io.on("connect", () => {    
             Log.i("Connected to " + process.env['ADB_SERVER']);
-			console.log("connect devices ",devices);
+			//console.log("connect devices ",devices);
 			io.emit("devices",devices);
         });
 		io.on('screen', (json)=> {
