@@ -11,6 +11,7 @@ class AdbManager {
 			"device.connect":[],
 			"device.disconnect":[],
 			capture:[],
+			net:[],
 		};
 		this.events = events;
 		this.devices = [];
@@ -51,6 +52,22 @@ class AdbManager {
 			const outputScreen = await launchCommandx(`-s ${id} shell input keyevent 26`);
 			resolve();
 		});
+	}
+	async getNet(id) {
+		const self = this;
+		const events = this.events;		
+		const devices = this.devices;
+		const outputScreen = await launchCommandx(`-s ${id} shell "ip addr show wlan0 | grep 'inet ' | cut -d' ' -f6"`);
+		let ip = await outputScreen.message;
+		const outputScreenMac = await launchCommandx(`-s ${id} shell "ip addr show wlan0 | grep 'link/ether' | cut -d' ' -f6"`);
+		let mac = await outputScreenMac.message;
+		const re = /(?<=wifiNetworkKey=").*(?=")/g;
+		const outputScreenSsid = await launchCommandx(`-s ${id} shell "dumpsys netstats | grep ' ratType=COMBINED, wifiNetworkKey*'"`);
+		let ssid = await outputScreenSsid.message.split('\r\n').map(s=>s.match(re)).filter((r,i)=>(i==0));		
+		const outputScreenWifiOn = await launchCommandx(`-s ${id} shell settings get global wifi_on`);
+		let wifiOn = await outputScreenWifiOn.message;		
+
+		await events['net'].forEach(async fn => await fn(id,ip,mac,(ssid!=null?(ssid.length>0?Array.isArray(ssid[0])?ssid[0][0]:ssid[0]:''):''),wifiOn=="1"));
 	}
 	async watchDevices() {
 		const self = this;

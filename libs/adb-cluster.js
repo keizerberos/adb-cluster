@@ -23,6 +23,11 @@ class AdbCluster{
 			//console.log("connect devices ",devices);
 			io.emit("devices",devices);
         });
+		io.on('network',async (json)=> {
+            Log.i("network");			
+			Log.o(json);
+			await adbManager.getNet(json.devices);
+		});
 		io.on('screen', (json)=> {
             //Log.i("screen");			
 			//Log.o(json);
@@ -135,6 +140,12 @@ class AdbCluster{
 			//Log.i("capture:"+id);			
 			//console.log(id, data);
 			io.emit("device.capture",{serial:id,data:data});
+		});
+		adbManager.on("net",(id,ip,mac,ssid,wifiOn)=>{
+			//Log.i("capture:"+id);			
+			//console.log(id, data);
+			//console.log("net",id,ip,mac,ssid);
+			io.emit("device.network",{serial:id,data:{ip:ip,mac:mac,ssid:ssid,wifiOn:wifiOn}});
 		});
 		adbManager.start();
     }
