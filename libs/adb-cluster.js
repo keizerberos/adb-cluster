@@ -28,20 +28,20 @@ class AdbCluster{
 			Log.o(json);
 			await adbManager.getNet(json.devices);
 		});
-		io.on('screen', (json)=> {
+		io.on('screen', async (json)=> {
             //Log.i("screen");			
 			//Log.o(json);
-			adbManager.updateScreens(json.devices);
+			await adbManager.updateScreens(json.devices);
 		});
-		io.on('Screen', (json)=> {
+		io.on('Screen', async (json)=> {
             //Log.i("Screen");			
 			//Log.o(json);
-			adbManager.updateScreens(json.devices);
+			await adbManager.updateScreens(json.devices);
 		});
-		io.on('screenx', (json)=> {
+		io.on('screenx',async (json)=> {
             //Log.i("Screen");			
 			//Log.o(json);
-			adbManager.updateScreens(json.devices);
+			await adbManager.updateScreens(json.devices);
 		});
 		io.on('unlock', (json)=> {
             Log.i("unlock");			
