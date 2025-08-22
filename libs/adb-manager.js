@@ -11,6 +11,7 @@ class AdbManager {
 			"device.connect":[],
 			"device.disconnect":[],
 			capture:[],
+			resolution:[],
 			net:[],
 		};
 		this.events = events;
@@ -53,6 +54,18 @@ class AdbManager {
 			resolve();
 		});
 	}
+	async getResolution(id) {
+		const self = this;
+		const events = this.events;		
+		const devices = this.devices;
+		const outputScreenSize = await launchCommandx(`-s ${id} shell "wm size | grep -o '[0-9].*'"`);
+		let size = await outputScreenSize.message;
+		const outputScreenDens = await launchCommandx(`-s ${id} shell "wm density"`);
+		let density = await outputScreenDens.message;
+		
+		await events['resolution'].forEach(async fn => await fn(id,size,density));
+	}
+
 	async getNet(id) {
 		const self = this;
 		const events = this.events;		

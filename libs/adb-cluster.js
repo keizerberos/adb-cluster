@@ -28,6 +28,11 @@ class AdbCluster{
 			Log.o(json);
 			await adbManager.getNet(json.devices);
 		});
+		io.on('resolution',async (json)=> {
+            Log.i("resolution");			
+			Log.o(json);
+			await adbManager.getResolution(json.devices);
+		});
 		io.on('screen', async (json)=> {
             //Log.i("screen");			
 			//Log.o(json);
@@ -146,6 +151,9 @@ class AdbCluster{
 			//console.log(id, data);
 			//console.log("net",id,ip,mac,ssid);
 			io.emit("device.network",{serial:id,data:{ip:ip,mac:mac,ssid:ssid,wifiOn:wifiOn}});
+		});
+		adbManager.on("resolution",(id,size,density)=>{
+			io.emit("device.resolution",{serial:id,data:{size:size,density:density}});
 		});
 		adbManager.start();
     }
