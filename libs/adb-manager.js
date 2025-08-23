@@ -76,7 +76,7 @@ class AdbManager {
 		let mac = await outputScreenMac.message;
 		const re = /(?<=wifiNetworkKey=\").[a-zA-Z0-9 -._]{1,16}(?=\")/g;
 		const outputScreenSsid = await launchCommandx(`-s ${id} shell "dumpsys netstats | grep ' ratType=COMBINED, wifiNetworkKey*'"`);
-		let ssid = await outputScreenSsid.message.match(re).find((r,i)=>(i==0));		
+		let ssid = await outputScreenSsid.message.match(re)?.find((r,i)=>(i==0));		
 		const outputScreenWifiOn = await launchCommandx(`-s ${id} shell settings get global wifi_on`);
 		let wifiOn = await outputScreenWifiOn.message;		
 
