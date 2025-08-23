@@ -74,13 +74,13 @@ class AdbManager {
 		let ip = await outputScreen.message;
 		const outputScreenMac = await launchCommandx(`-s ${id} shell "ip addr show wlan0 | grep 'link/ether' | cut -d' ' -f6"`);
 		let mac = await outputScreenMac.message;
-		const re = /(?<=wifiNetworkKey=").*(?=")/g;
+		const re = /(?<=wifiNetworkKey=\").[a-zA-Z0-9 -._]{1,16}(?=\")/g;
 		const outputScreenSsid = await launchCommandx(`-s ${id} shell "dumpsys netstats | grep ' ratType=COMBINED, wifiNetworkKey*'"`);
-		let ssid = await outputScreenSsid.message.split('\r\n').map(s=>s.match(re)).filter((r,i)=>(i==0));		
+		let ssid = await outputScreenSsid.message.map(s=>s.match(re)).find((r,i)=>(i==0));		
 		const outputScreenWifiOn = await launchCommandx(`-s ${id} shell settings get global wifi_on`);
 		let wifiOn = await outputScreenWifiOn.message;		
 
-		await events['net'].forEach(async fn => await fn(id,ip,mac,(ssid!=null?(ssid.length>0?Array.isArray(ssid[0])?ssid[0][0]:ssid[0]:''):''),wifiOn=="1"));
+		await events['net'].forEach(async fn => await fn(id,ip,mac,ssid,wifiOn=="1"));
 	}
 	async watchDevices() {
 		const self = this;
