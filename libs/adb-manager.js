@@ -87,7 +87,8 @@ class AdbManager {
 		const events = this.events;		
 		const devices = this.devices;
 		const outputScreen = await launchCommandx('devices');
-		let devicesAdb = outputScreen.message.split("\r\n").filter(d => !d.includes("List of")).map(d => { return { model: 'ZTE', onlySerial: d.split('\t')[0], serial: d.split('\t')[0]} });
+		
+		let devicesAdb = outputScreen.message.split("\n").filter(d => !d.includes("List of")).map(d => { return { model: 'ZTE', onlySerial: d.split('\t')[0], serial: d.split('\t')[0]} });
 		devicesAdb = devicesAdb.filter(d=>d.serial!='');
 //			devicesAdb = devicesAdb.sort((a, b) => (a.number != undefined ? a.number : 0) - (b.number != undefined ? b.number : 0));
 		let dataSend = {
