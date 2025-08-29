@@ -34,17 +34,17 @@ class AdbCluster{
 			await adbManager.getResolution(json.devices);
 		});
 		io.on('screen', async (json)=> {
-            //Log.i("screen");			
-			//Log.o(json);
+            Log.i("screen");			
+			//Log.o(json);			
 			await adbManager.updateScreens(json.devices);
 		});
 		io.on('Screen', async (json)=> {
-            //Log.i("Screen");			
+            Log.i("Screen");			
 			//Log.o(json);
 			await adbManager.updateScreens(json.devices);
 		});
 		io.on('screenx',async (json)=> {
-            //Log.i("Screen");			
+            Log.i("Screen");			
 			//Log.o(json);
 			await adbManager.updateScreens(json.devices);
 		});
@@ -54,7 +54,7 @@ class AdbCluster{
 			adbManager.updateScreens(json.devices);
 		});
 		io.on('adb', (json)=> {
-            //Log.i("adb");
+            Log.i("adb");
 			//console.log("json",json);	
 			adbManager.sendAdb(json);
 			adbManager.updateScreens(json.devices);
@@ -135,6 +135,9 @@ class AdbCluster{
 			if (devices[deviceAdb.serial]==null)
 				devices.push(deviceAdb);
 		});
+		adbManager.on("capture.prevent",(deviceSerial)=>{
+			Log.i("prevent capture from "+deviceSerial);
+		});
 		adbManager.on("device.disconnect",(deviceAdb)=>{
 			io.emit("device.disconnect",deviceAdb);
 			const deviceFinded = devices.find(d => d.serial == deviceAdb.serial);
@@ -142,7 +145,7 @@ class AdbCluster{
 				devices.splice(devices.indexOf(deviceFinded),1);
 		});
 		adbManager.on("capture",(id,data)=>{
-			//Log.i("capture:"+id);			
+			Log.i("capture:"+id);			
 			//console.log(id, data);
 			io.emit("device.capture",{serial:id,data:data});
 		});

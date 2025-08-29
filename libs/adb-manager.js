@@ -2,12 +2,14 @@ const {_adbb,_startGni,generateUniqueId,launchCommandx,adbCommand,adbCommandBuff
 
 let Log = null;
 let lastDevices = -1;
+let records = {};
 
 class AdbManager {
 	constructor(Logger) {
 		Log = Logger;
 		const events = {
 			devices:[],
+			"capture.prevent":[],
 			"device.connect":[],
 			"device.disconnect":[],
 			capture:[],
@@ -129,15 +131,12 @@ class AdbManager {
 	async start(){		
 		await this.watchDevices();
 	}
-	async recImage(id) {
+	async recImage(id,cbSucess,cbFail) {
 		const self = this;
-		return new Promise(async (resolve) => {
-			//console.log("recimage ",id);
-			const outputScreen = await launchCommandBuffer('-s ' + id + ' exec-out screencap -p')
-			self.events["capture"].forEach(async fn => {
-				fn(id, outputScreen.message);
-			});
-			resolve();
+		const outputScreen = await launchCommandBuffer('-s ' + id + ' exec-out screencap -p')
+		if (cbSucess!=null) cbSucess();
+		self.events["capture"].forEach(async fn => {
+			fn(id, outputScreen.message);
 		});
 	}
 	async startTethering(id) { 
@@ -148,7 +147,18 @@ class AdbManager {
 	}
 
 	async updateScreens(id) { 
-		await this.recImage(id);
+		const self = this;
+		if (records[id] == undefined){
+			records[id] = {id:id};
+			this.recImage(id,()=>{
+				records[id] = null;
+			});
+		}else {			
+			self.events["capture.prevent"].forEach(async fn => {
+				fn(id);
+			});
+			return;
+		}
 	}
 
 	on(event,fn){
