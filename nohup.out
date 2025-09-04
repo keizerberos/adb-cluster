@@ -1,0 +1,1206 @@
+[dotenv@17.2.1] injecting env (11) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+[34m2025-08-29T10:21:23.409[39m	[INFO]	(/home/workstation/adb-cluster/index.js:5:20)	Logger	Trying connect to ws://172.20.50.123:9000
+inDevices [
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC4006802',
+    serial: 'NBA34BOAC4006802'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5038914',
+    serial: 'NBA34BOAC5038914'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042174',
+    serial: 'NBA34BOAC5042174'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042176',
+    serial: 'NBA34BOAC5042176'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042188',
+    serial: 'NBA34BOAC5042188'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042212',
+    serial: 'NBA34BOAC5042212'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042260',
+    serial: 'NBA34BOAC5042260'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042556',
+    serial: 'NBA34BOAC5042556'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042568',
+    serial: 'NBA34BOAC5042568'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042615',
+    serial: 'NBA34BOAC5042615'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042616',
+    serial: 'NBA34BOAC5042616'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042619',
+    serial: 'NBA34BOAC5042619'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042623',
+    serial: 'NBA34BOAC5042623'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042624',
+    serial: 'NBA34BOAC5042624'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042644',
+    serial: 'NBA34BOAC5042644'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042652',
+    serial: 'NBA34BOAC5042652'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042654',
+    serial: 'NBA34BOAC5042654'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5043102',
+    serial: 'NBA34BOAC5043102'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5043104',
+    serial: 'NBA34BOAC5043104'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5044715',
+    serial: 'NBA34BOAC5044715'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5044724',
+    serial: 'NBA34BOAC5044724'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5044953',
+    serial: 'NBA34BOAC5044953'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5044961',
+    serial: 'NBA34BOAC5044961'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5046069',
+    serial: 'NBA34BOAC5046069'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5046072',
+    serial: 'NBA34BOAC5046072'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5047046',
+    serial: 'NBA34BOAC5047046'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5047063',
+    serial: 'NBA34BOAC5047063'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOPC5000831',
+    serial: 'NBA34BOPC5000831'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOPC5000854',
+    serial: 'NBA34BOPC5000854'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOPC5000889',
+    serial: 'NBA34BOPC5000889'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOPC5001919',
+    serial: 'NBA34BOPC5001919'
+  },
+  { model: 'ZTE', onlySerial: 'R3CN508C0EK', serial: 'R3CN508C0EK' },
+  { model: 'ZTE', onlySerial: 'R3CN509DWMP', serial: 'R3CN509DWMP' },
+  { model: 'ZTE', onlySerial: 'R3CN50B1MAY', serial: 'R3CN50B1MAY' },
+  { model: 'ZTE', onlySerial: 'R3CN50BT5YT', serial: 'R3CN50BT5YT' },
+  { model: 'ZTE', onlySerial: 'R3CN50BZXCV', serial: 'R3CN50BZXCV' },
+  { model: 'ZTE', onlySerial: 'R3CN50DAKVT', serial: 'R3CN50DAKVT' },
+  { model: 'ZTE', onlySerial: 'R3CN50EE05T', serial: 'R3CN50EE05T' },
+  { model: 'ZTE', onlySerial: 'R3CN50HR21V', serial: 'R3CN50HR21V' },
+  { model: 'ZTE', onlySerial: 'R3CN50JGLYV', serial: 'R3CN50JGLYV' },
+  { model: 'ZTE', onlySerial: 'R3CN50JH6DB', serial: 'R3CN50JH6DB' },
+  { model: 'ZTE', onlySerial: 'R3CN50L53TJ', serial: 'R3CN50L53TJ' },
+  { model: 'ZTE', onlySerial: 'R3CN606ESXH', serial: 'R3CN606ESXH' },
+  { model: 'ZTE', onlySerial: 'R3CN60H18VF', serial: 'R3CN60H18VF' },
+  { model: 'ZTE', onlySerial: 'R3CN7024J2A', serial: 'R3CN7024J2A' },
+  { model: 'ZTE', onlySerial: 'R3CN704SY4P', serial: 'R3CN704SY4P' },
+  { model: 'ZTE', onlySerial: 'R3CN705VM8F', serial: 'R3CN705VM8F' },
+  { model: 'ZTE', onlySerial: 'R3CN806Z5GP', serial: 'R3CN806Z5GP' },
+  { model: 'ZTE', onlySerial: 'R3CN80PG2DV', serial: 'R3CN80PG2DV' },
+  { model: 'ZTE', onlySerial: 'R3CN80R0YAR', serial: 'R3CN80R0YAR' },
+  {
+    model: 'ZTE',
+    onlySerial: 'YBZ2466LMCC3003259',
+    serial: 'YBZ2466LMCC3003259'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'YBZ2466LMCC3003798',
+    serial: 'YBZ2466LMCC3003798'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'YBZ2466LMCC3003861',
+    serial: 'YBZ2466LMCC3003861'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'YBZ2466LMCC3008273',
+    serial: 'YBZ2466LMCC3008273'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'YBZ2466LMGC3006458',
+    serial: 'YBZ2466LMGC3006458'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'YBZ2466LMGC3007827',
+    serial: 'YBZ2466LMGC3007827'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'YBZ2466LMGC3008410',
+    serial: 'YBZ2466LMGC3008410'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'YBZ2466LMGC3008831',
+    serial: 'YBZ2466LMGC3008831'
+  }
+]
+outDevices []
+[34m2025-08-29T10:21:23.538[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T10:27:16.118[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:27:16.122[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMCC3003259'[39m }
+[34m2025-08-29T10:27:16.133[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:27:16.133[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMCC3003798'[39m }
+[34m2025-08-29T10:27:16.143[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:27:16.145[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMCC3003861'[39m }
+[34m2025-08-29T10:27:16.153[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:27:16.155[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMCC3008273'[39m }
+[34m2025-08-29T10:27:16.163[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:27:16.165[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMGC3006458'[39m }
+[34m2025-08-29T10:27:16.173[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:27:16.173[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMGC3007827'[39m }
+[34m2025-08-29T10:27:16.183[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:27:16.187[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMGC3008410'[39m }
+[34m2025-08-29T10:27:16.194[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:27:16.196[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMGC3008831'[39m }
+[34m2025-08-29T10:36:20.868[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:20.870[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5047046'[39m }
+[34m2025-08-29T10:36:20.882[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:20.884[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5047063'[39m }
+[34m2025-08-29T10:36:20.892[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:20.894[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5038914'[39m }
+[34m2025-08-29T10:36:20.904[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:20.906[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042623'[39m }
+[34m2025-08-29T10:36:20.914[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:20.914[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042652'[39m }
+[34m2025-08-29T10:36:20.925[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:20.926[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042615'[39m }
+[34m2025-08-29T10:36:20.936[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:20.938[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042174'[39m }
+[34m2025-08-29T10:36:20.949[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:20.949[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOPC5001919'[39m }
+[34m2025-08-29T10:36:20.959[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:20.961[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOPC5000854'[39m }
+[34m2025-08-29T10:36:20.975[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:20.977[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042212'[39m }
+[34m2025-08-29T10:36:20.988[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:20.990[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOPC5000889'[39m }
+[34m2025-08-29T10:36:20.999[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.002[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042176'[39m }
+[34m2025-08-29T10:36:21.011[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.014[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042654'[39m }
+[34m2025-08-29T10:36:21.025[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.027[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042619'[39m }
+[34m2025-08-29T10:36:21.038[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.040[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5044715'[39m }
+[34m2025-08-29T10:36:21.050[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.052[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5044961'[39m }
+[34m2025-08-29T10:36:21.062[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.063[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5043102'[39m }
+[34m2025-08-29T10:36:21.075[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.077[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5044953'[39m }
+[34m2025-08-29T10:36:21.088[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.088[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5044724'[39m }
+[34m2025-08-29T10:36:21.101[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.101[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMCC3003861'[39m }
+[34m2025-08-29T10:36:21.112[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.114[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMCC3003259'[39m }
+[34m2025-08-29T10:36:21.127[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.129[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMGC3008410'[39m }
+[34m2025-08-29T10:36:21.138[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.140[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMCC3003798'[39m }
+[34m2025-08-29T10:36:21.150[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.154[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMGC3006458'[39m }
+[34m2025-08-29T10:36:21.164[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.164[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMCC3008273'[39m }
+[34m2025-08-29T10:36:21.175[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.176[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMGC3008831'[39m }
+[34m2025-08-29T10:36:21.190[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.192[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMGC3007827'[39m }
+[34m2025-08-29T10:36:21.201[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.201[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042188'[39m }
+[34m2025-08-29T10:36:21.213[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.213[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042556'[39m }
+[34m2025-08-29T10:36:21.223[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.226[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042624'[39m }
+[34m2025-08-29T10:36:21.240[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.240[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042644'[39m }
+[34m2025-08-29T10:36:21.250[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.250[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042568'[39m }
+[34m2025-08-29T10:36:21.263[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.263[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5043104'[39m }
+[34m2025-08-29T10:36:21.278[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.280[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042616'[39m }
+[34m2025-08-29T10:36:21.293[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.293[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5046069'[39m }
+[34m2025-08-29T10:36:21.305[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.307[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5046072'[39m }
+[34m2025-08-29T10:36:21.319[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.319[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOPC5000831'[39m }
+[34m2025-08-29T10:36:21.330[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.332[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC4006802'[39m }
+[34m2025-08-29T10:36:21.342[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.344[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042260'[39m }
+[34m2025-08-29T10:36:21.356[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.357[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN508C0EK'[39m }
+[34m2025-08-29T10:36:21.367[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.369[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN50HR21V'[39m }
+[34m2025-08-29T10:36:21.379[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.381[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN7024J2A'[39m }
+[34m2025-08-29T10:36:21.392[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.394[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN80R0YAR'[39m }
+[34m2025-08-29T10:36:21.403[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.406[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN50BZXCV'[39m }
+[34m2025-08-29T10:36:21.419[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.422[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN60H18VF'[39m }
+[34m2025-08-29T10:36:21.433[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.433[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN509DWMP'[39m }
+[34m2025-08-29T10:36:21.444[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.446[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN704SY4P'[39m }
+[34m2025-08-29T10:36:21.456[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.456[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN606ESXH'[39m }
+[34m2025-08-29T10:36:21.468[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.470[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN50JGLYV'[39m }
+[34m2025-08-29T10:36:21.480[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.481[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN50JH6DB'[39m }
+[34m2025-08-29T10:36:21.493[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.495[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN50B1MAY'[39m }
+[34m2025-08-29T10:36:21.504[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.506[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN50L53TJ'[39m }
+[34m2025-08-29T10:36:21.518[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.518[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN705VM8F'[39m }
+[34m2025-08-29T10:36:21.530[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.531[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN50DAKVT'[39m }
+[34m2025-08-29T10:36:21.543[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.544[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN50EE05T'[39m }
+[34m2025-08-29T10:36:21.553[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.555[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN80PG2DV'[39m }
+[34m2025-08-29T10:36:21.567[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.569[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN806Z5GP'[39m }
+[34m2025-08-29T10:36:21.579[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T10:36:21.582[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN50BT5YT'[39m }
+[34m2025-08-29T10:54:35.374[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T10:55:01.029[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T10:55:47.123[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T10:57:23.769[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T10:57:45.427[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T10:58:11.619[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T10:58:26.202[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T10:58:43.863[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T10:59:18.168[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T10:59:44.951[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T10:59:59.690[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:00:18.549[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:01:01.463[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:01:16.198[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:01:34.505[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:02:12.511[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:02:33.392[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:02:52.064[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:03:22.199[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+inDevices []
+outDevices [
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042615',
+    serial: 'NBA34BOAC5042615'
+  }
+]
+[34m2025-08-29T11:03:39.769[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+inDevices [
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042615',
+    serial: 'NBA34BOAC5042615'
+  }
+]
+outDevices []
+[34m2025-08-29T11:03:59.019[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:04:34.537[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:04:52.170[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:05:10.651[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:06:00.049[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:06:34.114[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:06:49.797[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:07:09.213[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:07:45.224[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:08:01.273[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:08:20.415[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:08:57.446[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:09:13.467[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:09:33.064[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:10:09.535[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:10:25.234[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:10:44.223[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:11:33.796[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:12:09.436[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:12:25.250[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:12:44.335[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:13:18.976[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:13:36.305[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:14:12.026[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:14:27.516[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:14:45.929[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:15:33.824[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:15:49.504[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:16:08.738[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:16:33.963[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:16:52.842[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:17:21.714[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:17:37.386[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:17:56.052[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:18:40.360[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:19:11.024[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:19:29.427[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:19:46.989[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:20:47.753[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:21:53.385[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:22:09.135[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:22:26.993[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:22:56.790[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:23:12.810[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:23:30.732[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:24:09.658[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:24:25.954[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:24:43.583[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:25:21.716[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:25:37.694[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:25:56.711[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:26:34.975[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:26:50.638[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:27:09.376[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:27:45.833[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:28:01.743[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:28:19.763[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:28:57.093[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:29:12.934[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:29:30.468[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:31:08.565[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:31:53.731[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:32:09.735[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:32:28.290[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:32:57.520[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:33:15.067[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:33:44.086[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:34:01.237[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:34:31.822[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:34:48.268[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:35:34.281[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:36:23.174[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:36:56.831[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:37:12.556[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:37:31.793[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:38:22.198[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:39:08.777[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:39:42.156[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:40:02.231[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:40:18.202[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:40:35.861[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:46:50.485[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:50.486[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMCC3003259'[39m }
+[34m2025-08-29T11:46:50.507[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:50.509[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMCC3003798'[39m }
+[34m2025-08-29T11:46:50.537[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:50.537[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMCC3003861'[39m }
+[34m2025-08-29T11:46:50.561[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:50.563[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMCC3008273'[39m }
+[34m2025-08-29T11:46:50.589[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:50.591[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMGC3006458'[39m }
+[34m2025-08-29T11:46:50.614[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:50.616[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMGC3007827'[39m }
+[34m2025-08-29T11:46:50.642[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:50.642[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMGC3008410'[39m }
+[34m2025-08-29T11:46:50.670[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:50.670[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMGC3008831'[39m }
+[34m2025-08-29T11:46:50.695[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:50.695[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5047046'[39m }
+[34m2025-08-29T11:46:50.722[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:50.723[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5047063'[39m }
+[34m2025-08-29T11:46:50.750[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:50.750[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5038914'[39m }
+[34m2025-08-29T11:46:50.776[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:50.778[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042623'[39m }
+[34m2025-08-29T11:46:50.802[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:50.804[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042652'[39m }
+[34m2025-08-29T11:46:50.831[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:50.833[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042615'[39m }
+[34m2025-08-29T11:46:50.878[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:50.881[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042174'[39m }
+[34m2025-08-29T11:46:50.909[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:50.909[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOPC5001919'[39m }
+[34m2025-08-29T11:46:50.934[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:50.936[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOPC5000854'[39m }
+[34m2025-08-29T11:46:50.959[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:50.961[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042212'[39m }
+[34m2025-08-29T11:46:50.986[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:50.986[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOPC5000889'[39m }
+[34m2025-08-29T11:46:51.012[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.014[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042176'[39m }
+[34m2025-08-29T11:46:51.039[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.042[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042654'[39m }
+[34m2025-08-29T11:46:51.067[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.069[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042619'[39m }
+[34m2025-08-29T11:46:51.095[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.096[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5044715'[39m }
+[34m2025-08-29T11:46:51.120[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.122[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5044961'[39m }
+[34m2025-08-29T11:46:51.147[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.149[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5043102'[39m }
+[34m2025-08-29T11:46:51.175[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.177[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5044953'[39m }
+[34m2025-08-29T11:46:51.201[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.203[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5044724'[39m }
+[34m2025-08-29T11:46:51.230[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.230[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042188'[39m }
+[34m2025-08-29T11:46:51.256[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.257[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042556'[39m }
+[34m2025-08-29T11:46:51.284[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.286[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042624'[39m }
+[34m2025-08-29T11:46:51.312[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.313[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042644'[39m }
+[34m2025-08-29T11:46:51.338[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.339[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042568'[39m }
+[34m2025-08-29T11:46:51.365[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.367[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5043104'[39m }
+[34m2025-08-29T11:46:51.392[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.394[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042616'[39m }
+[34m2025-08-29T11:46:51.416[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.417[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5046069'[39m }
+[34m2025-08-29T11:46:51.445[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.447[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5046072'[39m }
+[34m2025-08-29T11:46:51.473[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.475[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOPC5000831'[39m }
+[34m2025-08-29T11:46:51.499[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.501[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC4006802'[39m }
+[34m2025-08-29T11:46:51.529[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.529[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042260'[39m }
+[34m2025-08-29T11:46:51.557[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.559[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN508C0EK'[39m }
+[34m2025-08-29T11:46:51.584[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.587[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN50HR21V'[39m }
+[34m2025-08-29T11:46:51.612[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.614[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN7024J2A'[39m }
+[34m2025-08-29T11:46:51.639[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.639[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN80R0YAR'[39m }
+[34m2025-08-29T11:46:51.666[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.668[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN50BZXCV'[39m }
+[34m2025-08-29T11:46:51.693[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.695[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN60H18VF'[39m }
+[34m2025-08-29T11:46:51.721[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.723[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN509DWMP'[39m }
+[34m2025-08-29T11:46:51.748[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.750[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN704SY4P'[39m }
+[34m2025-08-29T11:46:51.775[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.777[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN606ESXH'[39m }
+[34m2025-08-29T11:46:51.803[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.806[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN50JGLYV'[39m }
+[34m2025-08-29T11:46:51.829[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.830[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN50JH6DB'[39m }
+[34m2025-08-29T11:46:51.855[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.857[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN50B1MAY'[39m }
+[34m2025-08-29T11:46:51.882[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.884[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN50L53TJ'[39m }
+[34m2025-08-29T11:46:51.913[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.915[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN705VM8F'[39m }
+[34m2025-08-29T11:46:51.941[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.941[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN50DAKVT'[39m }
+[34m2025-08-29T11:46:51.969[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:51.976[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN50EE05T'[39m }
+[34m2025-08-29T11:46:52.002[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:52.003[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN80PG2DV'[39m }
+[34m2025-08-29T11:46:52.030[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:52.032[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN806Z5GP'[39m }
+[34m2025-08-29T11:46:52.063[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:46:52.064[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN50BT5YT'[39m }
+[34m2025-08-29T11:46:58.512[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:47:07.961[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:07.962[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMCC3003259'[39m }
+[34m2025-08-29T11:47:07.990[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:07.994[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMCC3003798'[39m }
+[34m2025-08-29T11:47:08.043[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.044[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMCC3003861'[39m }
+[34m2025-08-29T11:47:08.071[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.072[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMCC3008273'[39m }
+[34m2025-08-29T11:47:08.103[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.105[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMGC3006458'[39m }
+[34m2025-08-29T11:47:08.136[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.137[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMGC3007827'[39m }
+[34m2025-08-29T11:47:08.166[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.168[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMGC3008410'[39m }
+[34m2025-08-29T11:47:08.194[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.195[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'YBZ2466LMGC3008831'[39m }
+[34m2025-08-29T11:47:08.223[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.227[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5047046'[39m }
+[34m2025-08-29T11:47:08.252[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.254[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5047063'[39m }
+[34m2025-08-29T11:47:08.281[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.283[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5038914'[39m }
+[34m2025-08-29T11:47:08.315[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.315[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042623'[39m }
+[34m2025-08-29T11:47:08.344[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.346[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042652'[39m }
+[34m2025-08-29T11:47:08.373[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.375[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042615'[39m }
+[34m2025-08-29T11:47:08.402[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.404[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042174'[39m }
+[34m2025-08-29T11:47:08.431[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.434[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOPC5001919'[39m }
+[34m2025-08-29T11:47:08.460[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.462[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOPC5000854'[39m }
+[34m2025-08-29T11:47:08.492[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.494[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042212'[39m }
+[34m2025-08-29T11:47:08.521[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.523[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOPC5000889'[39m }
+[34m2025-08-29T11:47:08.550[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.552[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042176'[39m }
+[34m2025-08-29T11:47:08.579[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.582[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042654'[39m }
+[34m2025-08-29T11:47:08.607[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.610[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042619'[39m }
+[34m2025-08-29T11:47:08.636[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.636[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5044715'[39m }
+[34m2025-08-29T11:47:08.663[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.665[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5044961'[39m }
+[34m2025-08-29T11:47:08.692[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.694[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5043102'[39m }
+[34m2025-08-29T11:47:08.722[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.722[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5044953'[39m }
+[34m2025-08-29T11:47:08.749[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.750[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5044724'[39m }
+[34m2025-08-29T11:47:08.777[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.779[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042188'[39m }
+[34m2025-08-29T11:47:08.805[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.805[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042556'[39m }
+[34m2025-08-29T11:47:08.834[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.836[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042624'[39m }
+[34m2025-08-29T11:47:08.863[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.863[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042644'[39m }
+[34m2025-08-29T11:47:08.891[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.891[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042568'[39m }
+[34m2025-08-29T11:47:08.917[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.919[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5043104'[39m }
+[34m2025-08-29T11:47:08.944[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.945[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042616'[39m }
+[34m2025-08-29T11:47:08.973[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:08.975[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5046069'[39m }
+[34m2025-08-29T11:47:09.000[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:09.002[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5046072'[39m }
+[34m2025-08-29T11:47:09.029[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:09.029[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOPC5000831'[39m }
+[34m2025-08-29T11:47:09.056[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:09.058[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC4006802'[39m }
+[34m2025-08-29T11:47:09.083[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:09.085[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'NBA34BOAC5042260'[39m }
+[34m2025-08-29T11:47:09.111[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:09.112[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN508C0EK'[39m }
+[34m2025-08-29T11:47:09.137[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:09.137[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN50HR21V'[39m }
+[34m2025-08-29T11:47:09.165[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:09.165[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN7024J2A'[39m }
+[34m2025-08-29T11:47:09.193[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:09.195[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN80R0YAR'[39m }
+[34m2025-08-29T11:47:09.222[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:09.222[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN50BZXCV'[39m }
+[34m2025-08-29T11:47:09.251[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:09.251[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN60H18VF'[39m }
+[34m2025-08-29T11:47:09.278[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:09.280[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN509DWMP'[39m }
+[34m2025-08-29T11:47:09.307[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:09.309[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN704SY4P'[39m }
+[34m2025-08-29T11:47:09.334[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:09.336[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN606ESXH'[39m }
+[34m2025-08-29T11:47:09.361[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:09.361[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN50JGLYV'[39m }
+[34m2025-08-29T11:47:09.387[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:09.389[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN50JH6DB'[39m }
+[34m2025-08-29T11:47:09.415[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:09.415[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN50B1MAY'[39m }
+[34m2025-08-29T11:47:09.442[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:09.443[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN50L53TJ'[39m }
+[34m2025-08-29T11:47:09.469[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:09.471[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN705VM8F'[39m }
+[34m2025-08-29T11:47:09.494[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:09.496[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN50DAKVT'[39m }
+[34m2025-08-29T11:47:09.528[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:09.528[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN50EE05T'[39m }
+[34m2025-08-29T11:47:09.555[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:09.555[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN80PG2DV'[39m }
+[34m2025-08-29T11:47:09.581[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:09.584[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN806Z5GP'[39m }
+[34m2025-08-29T11:47:09.611[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:27:17)	Logger	network
+[34m2025-08-29T11:47:09.613[39m	[OBJ]	(/home/workstation/adb-cluster/libs/adb-cluster.js:28:8)	[31mLogger[39m
+{ devices: [32m'R3CN50BT5YT'[39m }
+[34m2025-08-29T11:48:29.454[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T11:49:23.469[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:08:29.316[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:08:49.162[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:11:05.127[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:11:20.753[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:11:38.540[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:12:09.918[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:12:25.561[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:12:43.368[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:13:21.289[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:13:37.318[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:13:55.419[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:14:36.498[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:14:52.239[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:15:09.760[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:15:44.429[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:16:00.301[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:16:19.325[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:16:44.154[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:17:05.813[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:17:46.846[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:18:02.467[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:18:20.125[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:19:00.215[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:19:16.258[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:19:32.779[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:20:12.393[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:20:28.210[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:20:45.118[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:21:24.114[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:21:39.882[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:21:57.686[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:22:38.278[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:22:54.235[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:23:11.298[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:23:51.483[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:24:07.354[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:24:25.605[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:25:01.205[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:25:17.082[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:25:34.673[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:26:14.850[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:26:30.662[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:26:47.740[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:27:27.465[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:27:43.287[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:28:01.339[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:28:39.655[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:28:55.807[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:29:13.080[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:29:53.843[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:30:09.849[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:30:26.408[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:31:00.358[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:31:15.219[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:31:49.701[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:32:05.777[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:32:23.285[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:33:02.180[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:33:17.981[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:33:35.343[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:34:15.594[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:34:31.413[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:34:48.667[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:35:27.760[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:35:46.287[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:36:05.786[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:36:35.339[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:38:04.122[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:38:43.389[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:39:12.765[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:39:26.585[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:39:41.548[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:40:21.598[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:40:45.357[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:42:06.414[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:42:42.489[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:43:01.477[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:43:20.820[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:44:24.696[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:44:44.090[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T12:45:03.968[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T13:06:26.961[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T13:07:03.518[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T13:42:40.176[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T13:47:25.847[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T13:48:05.178[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T13:48:32.725[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T13:49:03.074[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T13:49:35.421[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T13:50:07.342[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T13:50:39.494[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T13:51:10.369[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T13:51:42.764[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T13:52:14.021[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T13:52:45.137[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T13:53:17.711[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T13:53:39.836[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T13:53:59.155[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T13:54:46.909[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[34m2025-08-29T13:55:07.357[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
+[dotenv@17.2.1] injecting env (11) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+[34m2025-08-29T15:58:39.459[39m	[INFO]	(/home/workstation/adb-cluster/index.js:5:20)	Logger	Trying connect to ws://172.20.50.123:9000
+inDevices [
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC4006802',
+    serial: 'NBA34BOAC4006802'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5038914',
+    serial: 'NBA34BOAC5038914'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042174',
+    serial: 'NBA34BOAC5042174'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042176',
+    serial: 'NBA34BOAC5042176'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042188',
+    serial: 'NBA34BOAC5042188'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042212',
+    serial: 'NBA34BOAC5042212'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042260',
+    serial: 'NBA34BOAC5042260'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042556',
+    serial: 'NBA34BOAC5042556'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042568',
+    serial: 'NBA34BOAC5042568'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042615',
+    serial: 'NBA34BOAC5042615'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042616',
+    serial: 'NBA34BOAC5042616'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042619',
+    serial: 'NBA34BOAC5042619'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042623',
+    serial: 'NBA34BOAC5042623'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042624',
+    serial: 'NBA34BOAC5042624'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042644',
+    serial: 'NBA34BOAC5042644'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042652',
+    serial: 'NBA34BOAC5042652'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5042654',
+    serial: 'NBA34BOAC5042654'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5043102',
+    serial: 'NBA34BOAC5043102'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5043104',
+    serial: 'NBA34BOAC5043104'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5044715',
+    serial: 'NBA34BOAC5044715'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5044724',
+    serial: 'NBA34BOAC5044724'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5044953',
+    serial: 'NBA34BOAC5044953'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5044961',
+    serial: 'NBA34BOAC5044961'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5046069',
+    serial: 'NBA34BOAC5046069'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5046072',
+    serial: 'NBA34BOAC5046072'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5047046',
+    serial: 'NBA34BOAC5047046'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOAC5047063',
+    serial: 'NBA34BOAC5047063'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOPC5000831',
+    serial: 'NBA34BOPC5000831'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOPC5000854',
+    serial: 'NBA34BOPC5000854'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOPC5000889',
+    serial: 'NBA34BOPC5000889'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'NBA34BOPC5001919',
+    serial: 'NBA34BOPC5001919'
+  },
+  { model: 'ZTE', onlySerial: 'R3CN508C0EK', serial: 'R3CN508C0EK' },
+  { model: 'ZTE', onlySerial: 'R3CN509DWMP', serial: 'R3CN509DWMP' },
+  { model: 'ZTE', onlySerial: 'R3CN50B1MAY', serial: 'R3CN50B1MAY' },
+  { model: 'ZTE', onlySerial: 'R3CN50BT5YT', serial: 'R3CN50BT5YT' },
+  { model: 'ZTE', onlySerial: 'R3CN50BZXCV', serial: 'R3CN50BZXCV' },
+  { model: 'ZTE', onlySerial: 'R3CN50DAKVT', serial: 'R3CN50DAKVT' },
+  { model: 'ZTE', onlySerial: 'R3CN50EE05T', serial: 'R3CN50EE05T' },
+  { model: 'ZTE', onlySerial: 'R3CN50HR21V', serial: 'R3CN50HR21V' },
+  { model: 'ZTE', onlySerial: 'R3CN50JGLYV', serial: 'R3CN50JGLYV' },
+  { model: 'ZTE', onlySerial: 'R3CN50JH6DB', serial: 'R3CN50JH6DB' },
+  { model: 'ZTE', onlySerial: 'R3CN50L53TJ', serial: 'R3CN50L53TJ' },
+  { model: 'ZTE', onlySerial: 'R3CN606ESXH', serial: 'R3CN606ESXH' },
+  { model: 'ZTE', onlySerial: 'R3CN60H18VF', serial: 'R3CN60H18VF' },
+  { model: 'ZTE', onlySerial: 'R3CN7024J2A', serial: 'R3CN7024J2A' },
+  { model: 'ZTE', onlySerial: 'R3CN704SY4P', serial: 'R3CN704SY4P' },
+  { model: 'ZTE', onlySerial: 'R3CN705VM8F', serial: 'R3CN705VM8F' },
+  { model: 'ZTE', onlySerial: 'R3CN806Z5GP', serial: 'R3CN806Z5GP' },
+  { model: 'ZTE', onlySerial: 'R3CN80PG2DV', serial: 'R3CN80PG2DV' },
+  { model: 'ZTE', onlySerial: 'R3CN80R0YAR', serial: 'R3CN80R0YAR' },
+  {
+    model: 'ZTE',
+    onlySerial: 'YBZ2466LMCC3003259',
+    serial: 'YBZ2466LMCC3003259'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'YBZ2466LMCC3003798',
+    serial: 'YBZ2466LMCC3003798'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'YBZ2466LMCC3003861',
+    serial: 'YBZ2466LMCC3003861'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'YBZ2466LMCC3008273',
+    serial: 'YBZ2466LMCC3008273'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'YBZ2466LMGC3006458',
+    serial: 'YBZ2466LMGC3006458'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'YBZ2466LMGC3007827',
+    serial: 'YBZ2466LMGC3007827'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'YBZ2466LMGC3008410',
+    serial: 'YBZ2466LMGC3008410'
+  },
+  {
+    model: 'ZTE',
+    onlySerial: 'YBZ2466LMGC3008831',
+    serial: 'YBZ2466LMGC3008831'
+  }
+]
+outDevices []
+[34m2025-08-29T15:58:39.577[39m	[INFO]	(/home/workstation/adb-cluster/libs/adb-cluster.js:22:17)	Logger	Connected to ws://172.20.50.123:9000
