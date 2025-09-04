@@ -66,11 +66,11 @@ class AdbCluster{
 		});
 		io.on('install.keyboard', (json)=> {
             Log.i("install.keyboard");	
-			adbManager.installApk(json.devices,__dirname+'./../apks/ADBKeyboard.apk');
+			adbManager.installApk(json.devices,__dirname+'/../apks/ADBKeyboard.apk');
 		});
 		io.on('install.gni', (json)=> {
             Log.i("install.gni");	
-			adbManager.installApk(json.devices,__dirname+'./../apks/gnirehtet.apk');
+			adbManager.installApk(json.devices,__dirname+'/../apks/gnirehtet.apk');
 		});
 		io.on('tethering.start', (json)=> {
             Log.i("start tethering for " + json.devices);
@@ -81,8 +81,8 @@ class AdbCluster{
 			adbManager.stopTethering(json.devices);
 		});
 		io.on('install.wifi', (json)=> {
-            Log.i("install.wif");	
-			adbManager.installApk(json.devices,__dirname+'./../apks/adb-join-wifi.apk');
+            Log.i("install.wifi");	
+			adbManager.installApk(json.devices,__dirname+'/../apks/adb-join-wifi.apk');
 		});
 		io.on('Lock', (json)=> {
             Log.i("Unlock");	
@@ -146,7 +146,7 @@ class AdbCluster{
 		});
 		adbManager.on("capture",(id,data)=>{
 			Log.i("capture:"+id);			
-			//console.log(id, data);
+			//console.log(id, data);			
 			io.emit("device.capture",{serial:id,data:data});
 		});
 		adbManager.on("net",(id,ip,mac,ssid,wifiOn)=>{
