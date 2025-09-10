@@ -18,6 +18,10 @@ class AdbCluster{
 				forceNew: true,
 			});
 
+        io.on("disconnect", (e) => {    
+			 Log.i("Disconnected from" + process.env['ADB_SERVER']);
+			 Log.o(e);
+		});
         io.on("connect", () => {    
             Log.i("Connected to " + process.env['ADB_SERVER']);
 			//console.log("connect devices ",devices);
