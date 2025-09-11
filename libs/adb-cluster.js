@@ -48,7 +48,7 @@ class AdbCluster{
 			await adbManager.updateScreens(json.devices);
 		});
 		io.on('screenx',async (json)=> {
-            Log.i("Screen");			
+            Log.i("screenx");			
 			//Log.o(json);
 			await adbManager.updateScreens(json.devices);
 		});
@@ -98,42 +98,7 @@ class AdbCluster{
 			adbManager.killApk(json);
 		});
 		io.on('message', (json)=> {
-			/*try {
-				let json = JSON.parse(data);
-				let params = { "screen_path": __dirname + "\\public2\\screens"	};
-				if (json.data != null)
-					Object.keys(json.data).forEach(k => {
-						json.data[k] = replaceParams(params, json.data[k]);
-					})
-				if (json.action == "Screenx") 
-					updateScreens(json.devices);
-				else if (json.action == "Unlock") 
-					unlockDevice(json.devices);
-				else if (json.action == "CaptureOn") 
-					unlockDevice(json.devices);
-				else if (json.action == "Lock") 
-					lockDevice(json.devices);
-				else if (json.action == "list")
-					listAdb(json, ws);
-				else if (json.action == "adb")
-					sendAdb(json);
-				else if (json.action == "stopApk")
-					killApk(json);
-
-				updateScreens(json.devices);
-				return;
-			} catch (e) {
-			}*/
 		});
-		/*adbManager.on("devices",(devicesAdb)=>{
-			devicesAdb.forEach(device => {
-				let findDevice = devices.find(d=>d.serial == devicesAdb.serial)
-				if(findDevice == null) devices.push(device);
-			});
-			Log.i("devices:");
-			Log.o(devices);
-			io.emit("devices",devices);
-		});*/
 		adbManager.on("device.connect",(deviceAdb)=>{
 			io.emit("device.connect",deviceAdb);
 			if (devices[deviceAdb.serial]==null)
