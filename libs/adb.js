@@ -44,7 +44,9 @@ const _adbb = (command,) => {
     return new Promise(async (resolve) => {
         let outputChunks = [];
         let outputLength = 0;
-        _adbProcess[id] = spawn(_adbpath, command, { shell: true, });
+        
+        _adbProcess[id] = spawn(_adbpath, command, { shell: false,maxBuffer: 4096 * 1024 });
+        //_adbProcess[id] = spawn(_adbpath, command, { shell: true, });
         _adbProcess[id].stdout.on("data", function (chunk) {
             outputChunks.push(chunk);
             outputLength += chunk.length;
