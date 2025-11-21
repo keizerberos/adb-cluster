@@ -105,6 +105,12 @@ class AdbCluster{
 			if (devices[deviceAdb.serial]==null)
 				devices.push(deviceAdb);
 		});
+		adbManager.on("device.change",(deviceAdb)=>{
+			io.emit("device.change",deviceAdb);
+			console.log("device.change",deviceAdb);
+			if (devices[deviceAdb.serial]==null)
+				devices.push(deviceAdb);
+		});
 		adbManager.on("capture.prevent",(deviceSerial)=>{
 			Log.i("prevent capture from "+deviceSerial);
 		});
