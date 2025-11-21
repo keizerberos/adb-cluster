@@ -92,7 +92,7 @@ class AdbManager {
 		const devices = this.devices;
 		const outputScreen = await launchCommandx('devices');
 		
-		let devicesAdb = outputScreen.message.split("\n").filter(d => !d.includes("List of")).map(d => { return { model: 'ZTE', onlySerial: d.split('\t')[0], serial: d.split('\t')[0], status:d.split('\t')[1]!=undefined?d.split('\t')[1].trim():'' } });
+		let devicesAdb = outputScreen.message.split("\n").filter(d => !d.includes("List of")).map(d => { return { model: 'ZTE', onlySerial: d.split('\t')[0], serial: d.split('\t')[0], status:d.split('\t')[1] } });
 		devicesAdb = devicesAdb.filter(d=>d.serial!='');
 //			devicesAdb = devicesAdb.sort((a, b) => (a.number != undefined ? a.number : 0) - (b.number != undefined ? b.number : 0));
 		let dataSend = {
@@ -107,11 +107,13 @@ class AdbManager {
 			const changedDevices = [];
 			currentDevices.forEach(device=>{
 				const deviceCurrent = devicesAdb.find(dd=>dd.serial == device.serial);
-				if (deviceCurrent!=null)
+				if (deviceCurrent!=null){
+					deviceCurrent.status = deviceCurrent.status.trim();
 					if (deviceCurrent.status != device.status) {
 						devices.status = deviceCurrent.status;
 						changedDevices.push(deviceCurrent);
 					}
+				}
 			});
 			if (changedDevices.length>0)
 				changedDevices.forEach(d=>events['device.change'].forEach(fn => fn(d)));
