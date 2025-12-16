@@ -6,6 +6,7 @@ const crypto = require('crypto');
 
 let _adbProcess = [];
 let _adbpath = "adb";
+let _systempath = "systemctl";
 const _timeout = 5000;
 function replaceParams(params, str) {
     Object.keys(params).forEach(k => {
@@ -59,6 +60,32 @@ const _adbb = (command,) => {
         _autoKill(id);
     });
 }
+
+const _service = (command,inputs) => {
+    const id = generateUniqueId(command.toString());
+    //let process = null; 
+    return new Promise(async (resolve) => {
+        let outputChunks = [];
+        let outputLength = 0;
+        
+        _adbProcess[id] = spawn(_systempath, command, { shell: false,maxBuffer: 4096 * 1024 });
+        //_adbProcess[id] = spawn(_adbpath, command, { shell: true, });
+        _adbProcess[id].stdout.on("data", function (chunk) {
+            outputChunks.push(chunk);
+            outputLength += chunk.length;
+			console.log("chunk",chunk+"");
+			//_adbProcess[id].stdin.write('workstation\n');
+        });
+        _adbProcess[id].stdout.on('end', () => {
+            const output = Buffer.concat(outputChunks, outputLength);
+            let result = true;
+			console.log("message",output+"");
+            resolve({ result, message: output });
+        });
+        _autoKill(id);
+    });
+}
+
 let launchCommandx = async param => {
     let output = { result: false, message: `` };
     output = await adbCommand(`${param}`);
@@ -103,9 +130,24 @@ let adbCommandBuffer = async function () {
     const output = await _adbb(params.split(" "), true);
     return arguments ? output : { result: false, message: '' };
 }
+let serviceCommandBuffer = async function () {
+    let params = "";
+    const baypass = arguments[arguments.length - 1] === true ? true : false;
+    const length = baypass ? arguments.length - 1 : arguments.length;
+    for (let i = 0; i < length; i++) params += (arguments[i] + (i == length - 1 ? `` : ` && `));
+    //const output = await _adb([`-s`, `${_ip}`].concat(params.split(" ")), baypass);
+    const output = await _service(params.split(" "), true);
+    return arguments ? output : { result: false, message: '' };
+}
 let launchCommandBuffer = async (param) => {
     let output = { result: false, message: `` };
     output = await adbCommandBuffer(`${param}`);
+    return output;
+}
+
+let launchServiceCommand = async (param) => {
+    let output = { result: false, message: `` };
+    output = await serviceCommandBuffer(`${param}`);
     return output;
 }
 const _autoKill = id => {
@@ -137,4 +179,4 @@ const _startGni = (command, baypass) => {
         });
     });
 };
-module.exports = {_adbb,_startGni,generateUniqueId,launchCommandx,adbCommand,adbCommandBuffer,launchCommandBuffer,_autoKill}
+module.exports = {_adbb,_startGni,generateUniqueId,launchCommandx,adbCommand,adbCommandBuffer,launchCommandBuffer,launchServiceCommand,_autoKill}

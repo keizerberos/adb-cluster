@@ -100,6 +100,24 @@ class AdbCluster{
 		});
 		io.on('message', (json)=> {
 		});
+		// CLUSTER COMMANDS
+		
+		io.on('cluster.commands', (json)=> {
+            Log.i("cluster commands");
+			//console.log("json",json);	
+			if (json.command == "restart.screenserver"){
+				adbManager.restartServiceScreen();
+			}			
+			if (json.command == "restart.adb"){
+				adbManager.executeAdb(' kill-server');
+				setTimeout(()=>{
+					adbManager.executeAdb(' start-server');
+				},2000);				
+			}			
+			if (json.command == "restart.cluster"){
+				process.exit();
+			}			
+		});
 		adbManager.on("device.connect",(deviceAdb)=>{
 			io.emit("device.connect",deviceAdb);
 			if (devices[deviceAdb.serial]==null)

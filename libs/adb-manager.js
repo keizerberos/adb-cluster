@@ -1,4 +1,4 @@
-const {_adbb,_startGni,generateUniqueId,launchCommandx,adbCommand,adbCommandBuffer,launchCommandBuffer,_autoKill} = require('./adb');
+const {_adbb,_startGni,generateUniqueId,launchCommandx,adbCommand,adbCommandBuffer,launchCommandBuffer,launchServiceCommand,_autoKill} = require('./adb');
 
 let Log = null;
 let lastDevices = -1;
@@ -24,7 +24,10 @@ class AdbManager {
 	async sendAdb(data) {
 		const outputScreen = await launchCommandx('-s ' + data.devices + ' shell ' + data.data.command);
 		}
-		
+	
+	async executeAdb(command) {
+		const outputScreen = await launchCommandx(command);
+		}
 	async killApk(data) {
 		//console.log("killApk adb command",'-s '+data.devices+' shell am force-stop ' + data.data.apk );
 		const outputScreen = await launchCommandx('-s ' + data.devices + ' shell am force-stop ' + data.data.apk)
@@ -179,6 +182,14 @@ class AdbManager {
 			});
 			return;
 		}
+	}
+	async restartServiceScreen(){
+		const self = this;
+		const outputScreen = await launchServiceCommand('restart node-adb-screenserver.service')
+		//if (cbSucess!=null) cbSucess();
+		/*self.events["capture"].forEach(async fn => {
+			fn(id, outputScreen.message);
+		});*/
 	}
 
 	on(event,fn){
