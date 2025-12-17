@@ -16,6 +16,7 @@ class AdbManager {
 			capture:[],
 			resolution:[],
 			net:[],
+			'ping':[],
 		};
 		this.events = events;
 		this.devices = [];
@@ -88,6 +89,30 @@ class AdbManager {
 		let wifiOn = await outputScreenWifiOn.message;		
 
 		await events['net'].forEach(async fn => await fn(id,ip,mac,ssid,wifiOn=="1"));
+	}
+
+	async getPing(id) {
+		const self = this;
+		const events = this.events;		
+		const devices = this.devices;
+		const outputScreen = await launchCommandx(`-s ${id} shell ping -c 3 8.8.8.8`);
+		let results = await outputScreen.message;
+		const re = /(?<=rtt\ min\/avg\/max\/mdev\ \= ).*/g;
+		console.log("getping results:", results);
+		const match = results.match(re);
+		console.log("getping match:", match);
+		let rtt = {min:-1,avg:-1,max:-1};
+		if (match != null){			
+			if (match.length>0){			
+				const rtt_vect = match[0].split("/");
+				console.log("rtt_vect:",rtt_vect);
+				if (rtt_vect.length == 4){
+					rtt = {min:parseFloat(rtt_vect[0]),avg:parseFloat(rtt_vect[1]),max:parseFloat(rtt_vect[2])};
+				}
+			}
+		}
+		console.log("getping rtt", rtt);
+		await events['ping'].forEach(async fn => await fn(id,rtt));
 	}
 	async watchDevices() {
 		const self = this;

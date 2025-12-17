@@ -33,6 +33,11 @@ class AdbCluster{
 			Log.o(json);
 			await adbManager.getNet(json.devices);
 		});
+		io.on('ping',async (json)=> {
+            Log.i("ping");			
+			Log.o(json);
+			await adbManager.getPing(json.devices);
+		});
 		io.on('resolution',async (json)=> {
             Log.i("resolution");			
 			Log.o(json);
@@ -149,6 +154,10 @@ class AdbCluster{
 			//console.log("net",id,ip,mac,ssid);
 			io.emit("device.network",{serial:id,data:{ip:ip,mac:mac,ssid:ssid,wifiOn:wifiOn}});
 		});
+		adbManager.on("ping",(id,rtt)=>{
+			io.emit("device.ping",{serial:id,data:rtt});
+		});
+		
 		adbManager.on("resolution",(id,size,density)=>{
 			io.emit("device.resolution",{serial:id,data:{size:size,density:density}});
 		});
