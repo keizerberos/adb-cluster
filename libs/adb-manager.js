@@ -138,8 +138,8 @@ class AdbManager {
 				if (deviceCurrent!=null){
 					deviceCurrent.status = deviceCurrent.status.trim();
 					if (deviceCurrent.status != device.status) {
-						devices.status = deviceCurrent.status;
-						changedDevices.push(deviceCurrent);
+						device.status = deviceCurrent.status;
+						changedDevices.push(deviceCurrent);						
 					}
 				}
 			});

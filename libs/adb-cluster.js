@@ -94,6 +94,10 @@ class AdbCluster{
             Log.i("install.wifi");	
 			adbManager.installApk(json.devices,__dirname+'/../apks/adb-join-wifi.apk');
 		});
+		io.on('install.auth', (json)=> {
+			Log.i("install.auth");	
+			adbManager.installApk(json.devices,__dirname+'/../apks/kerno.enable.auth.apk');
+		});
 		io.on('Lock', (json)=> {
             Log.i("Unlock");	
 			adbManager.lockDevice(json.devices);
