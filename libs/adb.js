@@ -173,7 +173,7 @@ const _startGni = (command, baypass) => {
 						_adbProcess[id] = spawn('java', command, { shell: false, });
 						
             _adbProcess[id].stdout.on("data", function (chunk) {
-               // console.log(outputChunks.toString());
+                console.log(outputChunks.toString());
                 //console.log(chunk.toString());
                 outputChunks.push(chunk);
                 outputLength += chunk.length;
@@ -230,7 +230,7 @@ const _runGni = (command, baypass) => {
 							console.log("tethering running");
 							
             _adbProcess[id].stdout.on("data", function (chunk) {
-                //console.log(chunk.toString());
+                console.log(chunk.toString());
                 outputChunks.push(chunk);
                 outputLength += chunk.length;
             });
