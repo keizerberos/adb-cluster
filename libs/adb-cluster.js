@@ -82,12 +82,16 @@ class AdbCluster{
             Log.i("install.gni");	
 			adbManager.installApk(json.devices,__dirname+'/../apks/gnirehtet.apk');
 		});
+		io.on('tethering.run', (json)=> {
+			Log.i("start tethering for " + json.devices);
+			adbManager.runTethering(json.devices);
+		});
 		io.on('tethering.start', (json)=> {
             Log.i("start tethering for " + json.devices);
 			adbManager.startTethering(json.devices);
 		});
 		io.on('tethering.stop', (json)=> {
-            Log.i("steo tethering for " + json.devices);	
+            Log.i("stop tethering for " + json.devices);	
 			adbManager.stopTethering(json.devices);
 		});
 		io.on('install.wifi', (json)=> {
@@ -166,6 +170,9 @@ class AdbCluster{
 			io.emit("device.resolution",{serial:id,data:{size:size,density:density}});
 		});
 		adbManager.start();
+		
+		Log.i("start tethering");
+		adbManager.runTethering([]);
     }
 }
 

@@ -1,4 +1,4 @@
-const {_adbb,_startGni,generateUniqueId,launchCommandx,adbCommand,adbCommandBuffer,launchCommandBuffer,launchServiceCommand,_autoKill} = require('./adb');
+const {_adbb,_startGni,_stopGni,_runGni,generateUniqueId,launchCommandx,adbCommand,adbCommandBuffer,launchCommandBuffer,launchServiceCommand,_autoKill} = require('./adb');
 
 let Log = null;
 let lastDevices = -1;
@@ -188,10 +188,13 @@ class AdbManager {
 		});
 	}
 	async startTethering(id) { 
-		_startGni(['run',id]);
+		_startGni(['start',id]);
+	}
+	async runTethering(id) { 
+		_runGni(['autorun']);
 	}
 	async stopTethering(id) { 
-		//_startGni(id);
+		_stopGni(['stop',id]);
 	}
 
 	async updateScreens(id) { 

@@ -164,7 +164,48 @@ const _startGni = (command, baypass) => {
         return new Promise(async (resolve) => {
             let outputChunks = [];
             let outputLength = 0;
-            _adbProcess[id] = spawn(__dirname+'\\..\\bin\\gnirehtet.exe', command, { shell: false, });
+            //_adbProcess[id] = spawn(__dirname+'\\..\\bin\\gnirehtet.exe', command, { shell: true, });
+						
+						//command.unshift("-jar",`'${__dirname}\\..\\bin\\gnirehtet.jar'`);
+						command.unshift("-jar",__dirname+'\\gnirehtet.jar');
+						command.push("-p","31222");
+						console.log("start command",command);
+						_adbProcess[id] = spawn('java', command, { shell: true, });
+						
+            _adbProcess[id].stdout.on("data", function (chunk) {
+               // console.log(outputChunks.toString());
+                console.log(chunk.toString());
+                outputChunks.push(chunk);
+                outputLength += chunk.length;
+            });
+            _adbProcess[id].stdout.on("error", function (chunk) {
+               // console.log(outputChunks.toString());
+                console.log(chunk.toString());
+                outputChunks.push(chunk);
+                outputLength += chunk.length;
+            });
+            _adbProcess[id].stdout.on('end', () => {
+                const output = Buffer.concat(outputChunks, outputLength);
+                let result = true;
+                resolve({ result, message: output });
+            });
+            //_autoKill(id);
+        });
+    });
+};
+const _stopGni = (command, baypass) => {
+     
+    return new Promise(async (resolve) => {
+        const id = generateUniqueId(command.toString());
+        //let process = null; 
+        return new Promise(async (resolve) => {
+            let outputChunks = [];
+            let outputLength = 0;
+            //_adbProcess[id] = spawn(__dirname+'\\..\\bin\\gnirehtet.exe', command, { shell: true, });
+						command.unshift("-jar",__dirname+'\\..\\bin\\gnirehtet.jar');
+						//command.push("-p","31222");
+						console.log("stop command",command);
+						_adbProcess[id] = spawn('java', command, { shell: true, });
             _adbProcess[id].stdout.on("data", function (chunk) {
                // console.log(outputChunks.toString());
                 outputChunks.push(chunk);
@@ -179,4 +220,33 @@ const _startGni = (command, baypass) => {
         });
     });
 };
-module.exports = {_adbb,_startGni,generateUniqueId,launchCommandx,adbCommand,adbCommandBuffer,launchCommandBuffer,launchServiceCommand,_autoKill}
+const _runGni = (command, baypass) => {
+     
+    return new Promise(async (resolve) => {
+        const id = generateUniqueId(command.toString());
+        //let process = null; 
+        return new Promise(async (resolve) => {
+            let outputChunks = [];
+            let outputLength = 0;
+            //_adbProcess[id] = spawn(__dirname+'\\..\\bin\\gnirehtet.exe', command, { shell: true, });
+						command.unshift("-jar",__dirname+'\\..\\bin\\gnirehtet.jar');
+						command.push("-p","31222");
+						
+						_adbProcess[id] = spawn('java', command, { shell: true, });
+							console.log("tethering running");
+							
+            _adbProcess[id].stdout.on("data", function (chunk) {
+                console.log(chunk.toString());
+                outputChunks.push(chunk);
+                outputLength += chunk.length;
+            });
+            _adbProcess[id].stdout.on('end', () => {
+                const output = Buffer.concat(outputChunks, outputLength);
+                let result = true;
+                resolve({ result, message: output });
+            });
+            //_autoKill(id);
+        });
+    });
+};
+module.exports = {_adbb,_startGni,_stopGni,_runGni,generateUniqueId,launchCommandx,adbCommand,adbCommandBuffer,launchCommandBuffer,launchServiceCommand,_autoKill}
