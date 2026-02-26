@@ -174,13 +174,7 @@ const _startGni = (command, baypass) => {
 						
             _adbProcess[id].stdout.on("data", function (chunk) {
                // console.log(outputChunks.toString());
-                console.log(chunk.toString());
-                outputChunks.push(chunk);
-                outputLength += chunk.length;
-            });
-            _adbProcess[id].stdout.on("error", function (chunk) {
-               // console.log(outputChunks.toString());
-                console.log(chunk.toString());
+                //console.log(chunk.toString());
                 outputChunks.push(chunk);
                 outputLength += chunk.length;
             });
@@ -236,7 +230,7 @@ const _runGni = (command, baypass) => {
 							console.log("tethering running");
 							
             _adbProcess[id].stdout.on("data", function (chunk) {
-                console.log(chunk.toString());
+                //console.log(chunk.toString());
                 outputChunks.push(chunk);
                 outputLength += chunk.length;
             });
