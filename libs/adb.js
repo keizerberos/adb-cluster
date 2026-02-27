@@ -170,7 +170,7 @@ const _startGni = (command, baypass) => {
 						command.unshift("-jar",__dirname+'\\gnirehtet.jar');
 						command.push("-p","31222");
 						console.log("start command",command);
-						_adbProcess[id] = spawn('/usr/bin/java', command, { shell: false, });
+						_adbProcess[id] = spawn('java', command, { shell: false, });
 						
             _adbProcess[id].stdout.on("data", function (chunk) {
                 console.log(outputChunks.toString());
@@ -199,7 +199,7 @@ const _stopGni = (command, baypass) => {
 						command.unshift("-jar",__dirname+'\\..\\bin\\gnirehtet.jar');
 						//command.push("-p","31222");
 						console.log("stop command",command);
-						_adbProcess[id] = spawn('/usr/bin/java', command, { shell: true, });
+						_adbProcess[id] = spawn('java', command, { shell: true, });
             _adbProcess[id].stdout.on("data", function (chunk) {
                // console.log(outputChunks.toString());
                 outputChunks.push(chunk);
@@ -226,7 +226,7 @@ const _runGni = (command, baypass) => {
 						command.unshift("-jar",__dirname+'\\..\\bin\\gnirehtet.jar');
 						command.push("-p","31222");
 						
-						_adbProcess[id] = spawn('/usr/bin/java', command, { shell: true, });
+						_adbProcess[id] = spawn('java', command, { shell: true, });
 							console.log("tethering running");
 							
             _adbProcess[id].stdout.on("data", function (chunk) {
