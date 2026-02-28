@@ -144,7 +144,7 @@ class AdbCluster{
 			}			
 		});
 		
-		io.emit("cluster.version",);
+		io.emit("cluster.version",config.version);
 		adbManager.on("device.connect",(deviceAdb)=>{
 			io.emit("device.connect",deviceAdb);
 			if (devices[deviceAdb.serial]==null)
