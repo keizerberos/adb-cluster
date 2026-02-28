@@ -5,9 +5,20 @@ const { AdbManager } 	= require("./adb-manager");
 
 let Log = null;
 
+let config = {
+	version : "2.0.0"
+}
+function setupConfig(){
+	const readmeContent = fs.readFileSync(`./README.md`, 'utf8');
+	config.readme = readmeContent;
+	const lines = readmeContent.split("\n");
+	config.version = lines[lines.length-1].split("\t")[0];
+	console.log("config.version",config.version);
+}
 class AdbCluster{
     constructor(Logger){                
         Log = Logger;
+				setupConfig();
 		const adbManager = new AdbManager(Log);
 		Log.i("Trying connect to " + process.env['ADB_SERVER']);
 		const devices = [];
@@ -131,6 +142,8 @@ class AdbCluster{
 				process.exit();
 			}			
 		});
+		
+		io.emit("cluster.version",);
 		adbManager.on("device.connect",(deviceAdb)=>{
 			io.emit("device.connect",deviceAdb);
 			if (devices[deviceAdb.serial]==null)

@@ -1,6 +1,7 @@
 
 const spawn = require('child_process').spawn;
 const spawnSync = require('child_process').spawn;
+const os = require ('os');
 const { exec, execFile } = require(`child_process`);
 const crypto = require('crypto');
 
@@ -223,12 +224,17 @@ const _runGni = (command, baypass) => {
             let outputChunks = [];
             let outputLength = 0;
             //_adbProcess[id] = spawn(__dirname+'\\..\\bin\\gnirehtet.exe', command, { shell: true, });
-						command.unshift("-jar",__dirname+'\\..\\bin\\gnirehtet.jar');
-						command.push("-p","31222");
-						
-						_adbProcess[id] = spawn('java', command, { shell: true, });
-							console.log("tethering running");
-							
+						if ( os.platform() == "win32"){
+							command.unshift("-jar",__dirname+'\\..\\bin\\gnirehtet.jar');
+							command.push("-p","31222");							
+							_adbProcess[id] = spawn('java', command, { shell: true, });
+							console.log("tethering running on win32");
+						}else{
+							command.unshift("-jar",__dirname+'/gnirehtet.jar');
+							command.push("-p","31223");							
+							_adbProcess[id] = spawn('java', command, { shell: true, });
+							console.log("tethering running on linux");
+						}
             _adbProcess[id].stdout.on("data", function (chunk) {
                 console.log(chunk.toString());
                 outputChunks.push(chunk);
