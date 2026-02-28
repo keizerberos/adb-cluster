@@ -169,7 +169,7 @@ const _startGni = (command, baypass) => {
             //_adbProcess[id] = spawn(__dirname+'\\..\\bin\\gnirehtet.exe', command, { shell: true, });
 						
 						//command.unshift("-jar",`'${__dirname}\\..\\bin\\gnirehtet.jar'`);
-						command.unshift("-jar",__dirname+'\\gnirehtet.jar');
+							command.unshift("-jar",path.join(__dirname,'gnirehtet.jar'));
 						command.push("-p","31223");
 						console.log("start command",command);
 						_adbProcess[id] = spawn('java', command, { shell: false, });
@@ -198,7 +198,7 @@ const _stopGni = (command, baypass) => {
             let outputChunks = [];
             let outputLength = 0;
             //_adbProcess[id] = spawn(__dirname+'\\..\\bin\\gnirehtet.exe', command, { shell: true, });
-						command.unshift("-jar",__dirname+'\\..\\bin\\gnirehtet.jar');
+							command.unshift("-jar",path.join(__dirname,'gnirehtet.jar'));
 						//command.push("-p","31222");
 						console.log("stop command",command);
 						_adbProcess[id] = spawn('java', command, { shell: true, });
@@ -226,12 +226,12 @@ const _runGni = (command, baypass) => {
             let outputLength = 0;
             //_adbProcess[id] = spawn(__dirname+'\\..\\bin\\gnirehtet.exe', command, { shell: true, });
 						if ( os.platform() == "win32"){
-							command.unshift("-jar",path(__dirname,'gnirehtet.jar'));
+							command.unshift("-jar",path.join(__dirname,'gnirehtet.jar'));
 							command.push("-p","31222");							
 							_adbProcess[id] = spawn('java', command, { shell: true, });
 							console.log("tethering running on win32");
 						}else{
-							command.unshift("-jar",path(__dirname,'gnirehtet.jar'));
+							command.unshift("-jar",path.join(__dirname,'gnirehtet.jar'));
 							command.push("-p","31223");							
 							_adbProcess[id] = spawn('java', command, { shell: true, });
 							console.log("tethering running on linux");
