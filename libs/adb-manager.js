@@ -191,7 +191,7 @@ class AdbManager {
 		_startGni(['start',id]);
 	}
 	async runTethering(id) { 
-		_runGni(['autorun']);
+		_runGni(['relay']);
 	}
 	async stopTethering(id) { 
 		_stopGni(['stop',id]);
