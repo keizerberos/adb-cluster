@@ -15,12 +15,20 @@ let config = {
 }
 function setupConfig() {
 	const readmeContent = fs.readFileSync(`./README.md`, 'utf8');
-	config.readme = readmeContent;
+	//config.readme = readmeContent;
 	const lines = readmeContent.split("\n");
 	config.version = lines[lines.length - 1].split("\t")[0];
 	console.log("config.version", config.version);
 
 
+	const totalMemory = os.totalmem();
+	const freeMemory = os.freemem();
+	config.totalMem = totalMemory;
+	config.freeMem = freeMemory;
+	config.usedMem = totalMemory-freeMemory;
+}
+function reportMemory(){
+	
 	const totalMemory = os.totalmem();
 	const freeMemory = os.freemem();
 	config.totalMem = totalMemory;
@@ -49,6 +57,9 @@ class AdbCluster {
 		io.on("connect", () => {
 			Log.i("Connected to " + process.env['ADB_SERVER']);
 			//console.log("connect devices ",devices);
+			
+			io.emit("cluster.version", config.version);
+			io.emit("cluster.config", config);
 			io.emit("devices", devices);
 		});
 		io.on('network', async (json) => {
@@ -182,6 +193,8 @@ class AdbCluster {
 			Log.i("capture:" + id);
 			//console.log(id, data);			
 			io.emit("device.capture", { serial: id, data: data });
+			reportMemory();
+			io.emit("cluster.config", config);
 		});
 		adbManager.on("net", (id, ip, mac, ssid, wifiOn) => {
 			//Log.i("capture:"+id);			
