@@ -317,7 +317,7 @@ class AdbManager {
 			await(await launchCommandx(`-s ${device.serial} shell wm size 720x1612`)).message;
 			await(await launchCommandx(`-s ${device.serial} shell wm density 320`)).message;
 			*/
-			await(await launchCommandx(`-s ${device.serial} shell "locksettings set-disabled true && settings put system screen_off_timeout 2147483647 && media volume --stream 4 --set 1 && media volume --stream 3 --set 0 && media volume --stream 2 --set 0 && media volume --stream 1 --set 0 && media volume --set 0 && settings put system screen_brightness_mode 0 && settings put system screen_brightness 1 && svc power stayon usb && ime enable com.android.adbkeyboard/.AdbIME && ime set com.android.adbkeyboard/.AdbIME && wm size 720x1612 && wm density 320"`)).message;
+			launchCommandx(`-s ${device.serial} shell "locksettings set-disabled true & settings put system screen_off_timeout 2147483647 & media volume --stream 4 --set 1 & media volume --stream 3 --set 0 & media volume --stream 2 --set 0 & media volume --stream 1 --set 0 & media volume --set 0 & settings put system screen_brightness_mode 0 & settings put system screen_brightness 1 & svc power stayon usb & ime enable com.android.adbkeyboard/.AdbIME && ime set com.android.adbkeyboard/.AdbIME & wm size 720x1612 & wm density 320"`);
 			res(device)
 		});
 	}
