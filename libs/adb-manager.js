@@ -211,7 +211,7 @@ class AdbManager {
 
 			console.log("info on " + device.serial);
 			const outputSize = await launchCommandx(`-s ${device.serial} shell "wm size | grep -o '[0-9].*'"`);
-			device['wmsize'] = await outputSize.message;		
+			/*device['wmsize'] = await outputSize.message;		
 			device['wmsize'] = device['wmsize'].split("\r\n");
 			
 			device['density'] = await(await launchCommandx(`-s ${device.serial} shell "wm density"`)).message;
@@ -229,11 +229,11 @@ class AdbManager {
 			device['brightness'] = await(await launchCommandx(`-s ${device.serial} shell settings get system screen_brightness`)).message;
 			device['brightnessMode'] = await(await launchCommandx(`-s ${device.serial} shell settings get system screen_brightness_mode`)).message;
 
-			
+			/*
 			device['brand'] = await(await launchCommandx(`-s ${device.serial} shell getprop ro.product.brand`)).message;
 			device['model'] = await(await launchCommandx(`-s ${device.serial} shell getprop ro.product.model`)).message;
 			device['manufacturer'] = await(await launchCommandx(`-s ${device.serial} shell getprop ro.product.manufacturer`)).message;
-
+			*/
 
 			device['ip'] = await(await launchCommandx(`-s ${device.serial} shell "ip addr show wlan0 | grep 'inet ' | cut -d' ' -f6"`)).message;
 
@@ -241,7 +241,7 @@ class AdbManager {
 			device['mac'] = await(await launchCommandx(`-s ${device.serial} shell "ip addr show wlan0 | grep 'link/ether' | cut -d' ' -f6"`)).message;
 			device['ssid'] = await(await launchCommandx(`-s ${device.serial} shell "dumpsys netstats | grep 'iface='"`)).message;
 			device['ssid'] = device['ssid'].match(re)?.find((r,i)=>(i==0));
-			
+			/*
 			device['apkFb'] = await(await launchCommandx(`-s ${device.serial} shell pm list packages com.facebook.lite`)).message;
 			device['apkFb'] = device['apkFb']!="";
 			device['apkTk'] = await(await launchCommandx(`-s ${device.serial} shell pm list packages com.zhiliaoapp.musically`)).message;
@@ -254,6 +254,14 @@ class AdbManager {
 			device['apkTet'] = device['apkTet']!="";
 			device['apkAut'] = await(await launchCommandx(`-s ${device.serial} shell pm list packages com.antrax.enableauth`)).message;
 			device['apkAut'] = device['apkAut']!="";
+			*/
+			const packages = await(await launchCommandx(`-s ${device.serial} shell pm list packages `)).message;
+			device['apkFb'] = packages.includes("com.facebook.lite");
+			device['apkTk'] = packages.includes("com.zhiliaoapp.musically");
+			device['apkJoin'] = packages.includes("com.steinwurf.adbjoinwifi");
+			device['apkKey'] = packages.includes("com.android.adbkeyboard");
+			device['apkTet'] = packages.includes("com.genymobile.gnirehte");
+			device['apkAut'] = packages.includes("com.antrax.enableauth");
 			device['brightness'] = await(await launchCommandx(`-s ${device.serial} shell settings get system screen_brightness`)).message;
 			device['brightnessMode'] = await(await launchCommandx(`-s ${device.serial} shell settings get system screen_brightness_mode`)).message;
 			
