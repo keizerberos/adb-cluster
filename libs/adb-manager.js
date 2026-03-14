@@ -302,7 +302,7 @@ class AdbManager {
 			await(await launchCommandx(`-s ${device.serial} shell ime set com.android.adbkeyboard/.AdbIME`)).message;
 			await(await launchCommandx(`-s ${device.serial} shell wm size 720x1612`)).message;
 			await(await launchCommandx(`-s ${device.serial} shell wm density 320`)).message;
-			
+			console.log("setup on " + device.serial);
 			res(device)
 		});
 	}
