@@ -289,7 +289,7 @@ class AdbManager {
 			await(await launchCommandx(`-s ${device.serial} uninstall com.facebook.katana`)).message;
 			await(await launchCommandx(`-s ${device.serial} shell locksettings set-disabled true`)).message;
 			await(await launchCommandx(`-s ${device.serial} shell settings put system screen_off_timeout 2147483647`)).message;
-			await(await launchCommandx(`-s ${device.serial} shell "input keyevent 25 && input keyevent 25 && input keyevent 25 && input keyevent 25 && input keyevent 25 & input keyevent 25"`)).message;
+		//	await(await launchCommandx(`-s ${device.serial} shell "input keyevent 25 && input keyevent 25 && input keyevent 25 && input keyevent 25 && input keyevent 25 & input keyevent 25"`)).message;
 			await(await launchCommandx(`-s ${device.serial} shell "media volume --stream 4 --set 1 && media volume --stream 3 --set 0 && media volume --stream 2 --set 0 && media volume --stream 1 --set 0 && media volume --set 0"`)).message;
 			
 
