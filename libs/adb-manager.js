@@ -208,6 +208,8 @@ class AdbManager {
 	async getInfo(device){		
 		if (device.status!='device') return device;
 		return new Promise(async (res,rej)=>{
+
+			console.log("info on " + device.serial);
 			const outputSize = await launchCommandx(`-s ${device.serial} shell "wm size | grep -o '[0-9].*'"`);
 			device['wmsize'] = await outputSize.message;		
 			device['wmsize'] = device['wmsize'].split("\r\n");
@@ -262,6 +264,8 @@ class AdbManager {
 	async installApks(device){		
 			if (device.status!='device') return device;
 		return new Promise(async (res,rej)=>{
+			
+			console.log("check install on " + device.serial);
 			if ( !device['apkFb'] ){ 
 				console.log("installing apkFb on " + device.serial);
 				device['apkFb'] = await(await launchCommandx(`-s ${device.serial} install ${path.join(__dirname,'..','apks','fblite.apk')}`)).message!="";}
@@ -286,6 +290,8 @@ class AdbManager {
 	async setupDevice(device){				
 		if (device.status!='device') return device;
 		return new Promise(async (res,rej)=>{
+			
+			console.log("setup on " + device.serial);
 			await(await launchCommandx(`-s ${device.serial} uninstall com.facebook.katana`)).message;
 			await(await launchCommandx(`-s ${device.serial} shell locksettings set-disabled true`)).message;
 			await(await launchCommandx(`-s ${device.serial} shell settings put system screen_off_timeout 2147483647`)).message;
@@ -302,7 +308,6 @@ class AdbManager {
 			await(await launchCommandx(`-s ${device.serial} shell ime set com.android.adbkeyboard/.AdbIME`)).message;
 			await(await launchCommandx(`-s ${device.serial} shell wm size 720x1612`)).message;
 			await(await launchCommandx(`-s ${device.serial} shell wm density 320`)).message;
-			console.log("setup on " + device.serial);
 			res(device)
 		});
 	}
