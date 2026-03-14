@@ -344,6 +344,7 @@ class AdbManager {
 	async restartServiceScreen(){
 		const self = this;
 		const outputScreen = await launchServiceCommand('restart node-adb-screenserver.service')
+		const outputScreen2 = await launchServiceCommand('restart adb-screenserver.service')
 		//if (cbSucess!=null) cbSucess();
 		/*self.events["capture"].forEach(async fn => {
 			fn(id, outputScreen.message);

@@ -5,3 +5,4 @@
 2.2.0(14/03/2026)	Preconfig, install apks default, check props
 2.2.1(14/03/2026)	fix changed devices event
 2.2.2(14/03/2026)	fix volume delay
+2.2.3(14/03/2026)	update restart screenserver
