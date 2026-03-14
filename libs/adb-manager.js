@@ -139,10 +139,25 @@ class AdbManager {
 					deviceCurrent.status = deviceCurrent.status.trim();
 					if (deviceCurrent.status != device.status) {
 						device.status = deviceCurrent.status;
+						
 						changedDevices.push(deviceCurrent);						
 					}
 				}
 			});
+			
+			
+			for (let i = 0; i< changedDevices.length;i++){
+				const device = changedDevices[i];
+				await self.getInfo(device);
+			};
+			for (let i = 0; i< changedDevices.length;i++){
+				const device = changedDevices[i];
+				await self.installApks(device);
+			};
+			for (let i = 0; i< changedDevices.length;i++){
+				const device = changedDevices[i];
+				await self.setupDevice(device);
+			};
 			if (changedDevices.length>0)
 				changedDevices.forEach(d=>events['device.change'].forEach(fn => fn(d)));
 		
@@ -176,6 +191,7 @@ class AdbManager {
 				const device = inDevices[i];
 				await self.setupDevice(device);
 			};
+			
 			if (inDevices.length>0)
 				inDevices.forEach(d=>events['device.connect'].forEach(fn => fn(d)));
 				
@@ -270,6 +286,7 @@ class AdbManager {
 	async setupDevice(device){				
 		if (device.status!='device') return device;
 		return new Promise(async (res,rej)=>{
+			await(await launchCommandx(`-s ${device.serial} uninstall com.facebook.katana`)).message;
 			await(await launchCommandx(`-s ${device.serial} shell locksettings set-disabled true`)).message;
 			await(await launchCommandx(`-s ${device.serial} shell settings put system screen_off_timeout 2147483647`)).message;
 			await(await launchCommandx(`-s ${device.serial} shell "input keyevent 25 && input keyevent 25 && input keyevent 25 && input keyevent 25 && input keyevent 25 & input keyevent 25"`)).message;
