@@ -134,7 +134,7 @@ class AdbCluster {
 		});
 		io.on('install.auth', (json) => {
 			Log.i("install.auth");
-			adbManager.installApk(json.devices, __dirname + '/../apks/kerno.enable.auth.apk');
+			adbManager.installApk(json.devices, __dirname + '/../apks/kerno.enableauth.apk');
 		});
 		io.on('Lock', (json) => {
 			Log.i("Unlock");

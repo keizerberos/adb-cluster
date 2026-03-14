@@ -199,7 +199,7 @@ const _stopGni = (command, baypass) => {
             let outputLength = 0;
             //_adbProcess[id] = spawn(__dirname+'\\..\\bin\\gnirehtet.exe', command, { shell: true, });
 							command.unshift("-jar",path.join(__dirname,'gnirehtet.jar'));
-						//command.push("-p","31222");
+						//command.push("-p","31223");
 						console.log("stop command",command);
 						_adbProcess[id] = spawn('java', command, { shell: true, });
             _adbProcess[id].stdout.on("data", function (chunk) {
@@ -227,7 +227,7 @@ const _runGni = (command, baypass) => {
             //_adbProcess[id] = spawn(__dirname+'\\..\\bin\\gnirehtet.exe', command, { shell: true, });
 						if ( os.platform() == "win32"){
 							command.unshift("-jar",path.join(__dirname,'gnirehtet.jar'));
-							command.push("-p","31222");							
+							command.push("-p","31223");							
 							_adbProcess[id] = spawn('java', command, { shell: true, });
 							console.log("tethering running on win32");
 						}else{
