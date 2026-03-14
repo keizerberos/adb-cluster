@@ -234,14 +234,14 @@ class AdbManager {
 			device['model'] = await(await launchCommandx(`-s ${device.serial} shell getprop ro.product.model`)).message;
 			device['manufacturer'] = await(await launchCommandx(`-s ${device.serial} shell getprop ro.product.manufacturer`)).message;
 			*/
-
+/*
 			device['ip'] = await(await launchCommandx(`-s ${device.serial} shell "ip addr show wlan0 | grep 'inet ' | cut -d' ' -f6"`)).message;
 
 			const re = /(?<=(wifiNetworkKey|networkId)=\").[a-zA-Z0-9 -._]{1,16}(?=\")/g;
 			device['mac'] = await(await launchCommandx(`-s ${device.serial} shell "ip addr show wlan0 | grep 'link/ether' | cut -d' ' -f6"`)).message;
 			device['ssid'] = await(await launchCommandx(`-s ${device.serial} shell "dumpsys netstats | grep 'iface='"`)).message;
 			device['ssid'] = device['ssid'].match(re)?.find((r,i)=>(i==0));
-			/*
+			
 			device['apkFb'] = await(await launchCommandx(`-s ${device.serial} shell pm list packages com.facebook.lite`)).message;
 			device['apkFb'] = device['apkFb']!="";
 			device['apkTk'] = await(await launchCommandx(`-s ${device.serial} shell pm list packages com.zhiliaoapp.musically`)).message;
@@ -257,13 +257,14 @@ class AdbManager {
 			*/
 			const packages = await(await launchCommandx(`-s ${device.serial} shell pm list packages `)).message;
 			device['apkFb'] = packages.includes("com.facebook.lite");
+			device['apkFbk'] = packages.includes("com.facebook.katana");
 			device['apkTk'] = packages.includes("com.zhiliaoapp.musically");
 			device['apkJoin'] = packages.includes("com.steinwurf.adbjoinwifi");
 			device['apkKey'] = packages.includes("com.android.adbkeyboard");
 			device['apkTet'] = packages.includes("com.genymobile.gnirehte");
 			device['apkAut'] = packages.includes("com.antrax.enableauth");
-			device['brightness'] = await(await launchCommandx(`-s ${device.serial} shell settings get system screen_brightness`)).message;
-			device['brightnessMode'] = await(await launchCommandx(`-s ${device.serial} shell settings get system screen_brightness_mode`)).message;
+			//device['brightness'] = await(await launchCommandx(`-s ${device.serial} shell settings get system screen_brightness`)).message;
+			//device['brightnessMode'] = await(await launchCommandx(`-s ${device.serial} shell settings get system screen_brightness_mode`)).message;
 			
 			
 			res(await device);
@@ -300,13 +301,12 @@ class AdbManager {
 		return new Promise(async (res,rej)=>{
 			
 			console.log("setup on " + device.serial);
-			await(await launchCommandx(`-s ${device.serial} uninstall com.facebook.katana`)).message;
-			await(await launchCommandx(`-s ${device.serial} shell locksettings set-disabled true`)).message;
+			if ( device.apkFbk) await(await launchCommandx(`-s ${device.serial} uninstall com.facebook.katana`)).message;
+			/*await(await launchCommandx(`-s ${device.serial} shell locksettings set-disabled true`)).message;
 			await(await launchCommandx(`-s ${device.serial} shell settings put system screen_off_timeout 2147483647`)).message;
 		//	await(await launchCommandx(`-s ${device.serial} shell "input keyevent 25 && input keyevent 25 && input keyevent 25 && input keyevent 25 && input keyevent 25 & input keyevent 25"`)).message;
 			await(await launchCommandx(`-s ${device.serial} shell "media volume --stream 4 --set 1 && media volume --stream 3 --set 0 && media volume --stream 2 --set 0 && media volume --stream 1 --set 0 && media volume --set 0"`)).message;
 			
-
 			if (parseInt(device.brightnessMode)!=0)  await(await launchCommandx(`-s ${device.serial} shell settings put system screen_brightness_mode 0`)).message;
 			await(await launchCommandx(`-s ${device.serial} shell settings put system screen_brightness 1`)).message;
 			//if (parseInt(device.brightness)>1)  await(await launchCommandx(`-s ${device.serial} shell "input keyevent 220 && input keyevent 220 && input keyevent 220 && input keyevent 220 && input keyevent 220 && input keyevent 220 && input keyevent 220 && input keyevent 220 && input keyevent 220 && input keyevent 220"`)).message;
@@ -316,6 +316,8 @@ class AdbManager {
 			await(await launchCommandx(`-s ${device.serial} shell ime set com.android.adbkeyboard/.AdbIME`)).message;
 			await(await launchCommandx(`-s ${device.serial} shell wm size 720x1612`)).message;
 			await(await launchCommandx(`-s ${device.serial} shell wm density 320`)).message;
+			*/
+			await(await launchCommandx(`-s ${device.serial} shell "locksettings set-disabled true && settings put system screen_off_timeout 2147483647 && media volume --stream 4 --set 1 && media volume --stream 3 --set 0 && media volume --stream 2 --set 0 && media volume --stream 1 --set 0 && media volume --set 0 && settings put system screen_brightness_mode 0 && settings put system screen_brightness 1 && svc power stayon usb && ime enable com.android.adbkeyboard/.AdbIME && ime set com.android.adbkeyboard/.AdbIME && wm size 720x1612 && wm density 320"`)).message;
 			res(device)
 		});
 	}
