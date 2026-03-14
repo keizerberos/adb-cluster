@@ -2,6 +2,8 @@
 const { Client } = require("socket.io");
 const SocketIo = require("socket.io-client");
 const { AdbManager } = require("./adb-manager");
+const { spawn } = require('child_process');
+
 const fs = require('fs');
 const os = require('os');
 
@@ -27,6 +29,35 @@ function setupConfig() {
 	config.freeMem = freeMemory;
 	config.usedMem = totalMemory-freeMemory;
 }
+
+function updateGit() {
+
+
+	function runCommand(command, args) {
+		return new Promise((resolve, reject) => {
+			const child = spawn(command, args, { stdio: 'inherit' });
+
+			child.on('close', (code) => {
+				if (code === 0) resolve();
+				else reject(new Error(`Command failed with code ${code}`));
+			});
+		});
+	}
+
+	(async () => {
+		try {
+			/*	await runCommand('git', ['add','.']);
+				await runCommand('git', ['commit','.','-m',"update"]); 
+				await runCommand('git', ['push','glab','main']); */
+			await runCommand('git', ['fetch']);
+			await runCommand('git', ['pull', 'origin', 'main']);
+			process.exit(0)
+		} catch (err) {
+			console.error(err);
+		}
+	})();
+}
+
 function reportMemory(){
 	
 	const totalMemory = os.totalmem();
@@ -50,6 +81,12 @@ class AdbCluster {
 			/*forceNew: true,*/
 		});
 
+			io.on("cluster.update", (e) => {
+				Log.i("cluster update");
+				updateGit();
+
+
+			});
 		io.on("disconnect", (e) => {
 			Log.i("Disconnected from" + process.env['ADB_SERVER']);
 			Log.o(e);

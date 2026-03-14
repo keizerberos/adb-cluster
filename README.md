@@ -8,3 +8,4 @@
 2.2.3(14/03/2026)	update restart screenserver
 2.2.4(14/03/2026)	update env
 2.2.5(14/03/2026)	perform setup
+2.3.0(14/03/2026)	perform setup more, add updater
