@@ -259,6 +259,7 @@ class AdbManager {
 			device['apkFb'] = packages.includes("com.facebook.lite");
 			device['apkFbk'] = packages.includes("com.facebook.katana");
 			device['apkTk'] = packages.includes("com.zhiliaoapp.musically");
+			device['apkTkBad'] = packages.includes("com.ss.android.ugc.trill");
 			device['apkJoin'] = packages.includes("com.steinwurf.adbjoinwifi");
 			device['apkKey'] = packages.includes("com.android.adbkeyboard");
 			device['apkTet'] = packages.includes("com.genymobile.gnirehte");
@@ -275,6 +276,13 @@ class AdbManager {
 		return new Promise(async (res,rej)=>{
 			
 			console.log("check install on " + device.serial);
+			if ( !device['apkFbk'] ){ 
+				console.log("installing apkFb on " + device.serial);
+				//device['apkFb'] = await(await launchCommandx(`-s ${device.serial} install ${path.join(__dirname,'..','apks','fb.apk')}`)).message!="";}
+			if ( !device['apkTk'] ){ 
+				//console.log("install apkTk on " + device.serial);
+				//device['apkTk'] = await(await launchCommandx(`-s ${device.serial} install ${path.join(__dirname,'..','apks','tiktok.apk')}`)).message!="";
+				}
 			if ( !device['apkFb'] ){ 
 				console.log("installing apkFb on " + device.serial);
 				device['apkFb'] = await(await launchCommandx(`-s ${device.serial} install ${path.join(__dirname,'..','apks','fblite.apk')}`)).message!="";}
@@ -283,8 +291,7 @@ class AdbManager {
 				device['apkJoin'] = await(await launchCommandx(`-s ${device.serial} install ${path.join(__dirname,'..','apks','adb-join-wifi.apk')}`)).message!="";}
 			if ( !device['apkKey'] ) {
 				console.log("installing apkKey on " + device.serial);
-				device['apkKey'] = await(await launchCommandx(`-s ${device.serial} install ${path.join(__dirname,'..','apks','ADBKeyboard.apk')}`)).message!="";
-			}
+				device['apkKey'] = await(await launchCommandx(`-s ${device.serial} install ${path.join(__dirname,'..','apks','ADBKeyboard.apk')}`)).message!="";}
 			if ( !device['apkTet'] ) { 
 				console.log("installing apkTet on " + device.serial);
 				device['apkTet'] = await(await launchCommandx(`-s ${device.serial} install ${path.join(__dirname,'..','apks','gnirehtet.apk')}`)).message!="";}
@@ -301,7 +308,8 @@ class AdbManager {
 		return new Promise(async (res,rej)=>{
 			
 			console.log("setup on " + device.serial);
-			if ( device.apkFbk) await(await launchCommandx(`-s ${device.serial} uninstall com.facebook.katana`)).message;
+			if ( device['apkTkBad']) await(await launchCommandx(`-s ${device.serial} uninstall com.ss.android.ugc.trill`)).message;
+			if ( device['apkFbk']) await(await launchCommandx(`-s ${device.serial} uninstall com.facebook.katana`)).message;
 			/*await(await launchCommandx(`-s ${device.serial} shell locksettings set-disabled true`)).message;
 			await(await launchCommandx(`-s ${device.serial} shell settings put system screen_off_timeout 2147483647`)).message;
 		//	await(await launchCommandx(`-s ${device.serial} shell "input keyevent 25 && input keyevent 25 && input keyevent 25 && input keyevent 25 && input keyevent 25 & input keyevent 25"`)).message;
