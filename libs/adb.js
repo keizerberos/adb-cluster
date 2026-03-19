@@ -9,7 +9,7 @@ const crypto = require('crypto');
 let _adbProcess = [];
 let _adbpath = "adb";
 let _systempath = "systemctl";
-const _timeout = 5000;
+const _timeout = 7000;
 function replaceParams(params, str) {
     Object.keys(params).forEach(k => {
         str = str.replace("{" + k + "}", params[k])
