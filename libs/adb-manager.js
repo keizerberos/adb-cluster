@@ -279,6 +279,7 @@ class AdbManager {
 			if ( !device['apkFbk'] ){ 
 				console.log("installing apkFb on " + device.serial);
 				//device['apkFb'] = await(await launchCommandx(`-s ${device.serial} install ${path.join(__dirname,'..','apks','fb.apk')}`)).message!="";}
+				}
 			if ( !device['apkTk'] ){ 
 				//console.log("install apkTk on " + device.serial);
 				//device['apkTk'] = await(await launchCommandx(`-s ${device.serial} install ${path.join(__dirname,'..','apks','tiktok.apk')}`)).message!="";

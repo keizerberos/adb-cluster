@@ -23,7 +23,7 @@ function generateUniqueId(str) {
 }
 const _adb = (command, baypass) => {
     const id = generateUniqueId(command.toString());
-    // console.log("command",command);
+     console.log("command",command);
     return new Promise(async (resolve) => {
         _adbProcess[id] = execFile(_adbpath, command, (error, stdout, stderr) => {
             let message = error ? stderr.trim() : stdout.trim();
